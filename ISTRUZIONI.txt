@@ -1,0 +1,9 @@
+PACCHETTO SITO LUIGI MAURI
+
+1. Carica nella cartella principale del dominio tutto il contenuto di questa cartella.
+2. Mantieni invariati i nomi e la cartella "images".
+3. Il file iniziale è index.html.
+4. Se sul server esiste già un index.html, scaricane una copia di sicurezza prima di sostituirlo.
+5. Dopo l'upload apri https://www.luigimauri.com e aggiorna la pagina svuotando la cache.
+
+Il sito è statico: non richiede WordPress, database, Node.js o configurazioni particolari.
