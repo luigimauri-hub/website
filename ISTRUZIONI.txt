@@ -19,3 +19,7 @@ Sono necessari anche pagine.css e calcolatori.js.
 PAGINE PORTFOLIO INTERNE
 I contenuti Portfolio e partner sono riuniti nella sola pagina portfolio.html.
 Carica anche portfolio.css.
+
+PAGINA CHI SONO
+La homepage contiene una sintesi e rimanda a chi-sono.html.
+Carica anche chi-sono.css.
