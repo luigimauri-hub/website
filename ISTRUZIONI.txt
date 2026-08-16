@@ -7,3 +7,11 @@ PACCHETTO SITO LUIGI MAURI
 5. Dopo l'upload apri https://www.luigimauri.com e aggiorna la pagina svuotando la cache.
 
 Il sito è statico: non richiede WordPress, database, Node.js o configurazioni particolari.
+
+AGGIORNAMENTO MENU MOBILE
+Per aggiungere il menu hamburger a un sito già caricato, sostituisci index.html e script.js
+e carica anche il nuovo file menu.css.
+
+VERSIONE CON MENU DESKTOP E PAGINE INTERNE
+Carica tutti i file. Le nuove pagine sono calcolatori.html ed esempi.html.
+Sono necessari anche pagine.css e calcolatori.js.

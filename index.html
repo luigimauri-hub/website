@@ -13,19 +13,29 @@
   <meta property="og:image" content="https://www.luigimauri.com/luigi-mauri-consulenza-hero.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu.css">
   <style>.hero-image,.profile-photo{background-image:url('luigi-mauri-consulenza-hero.jpg')}</style>
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="shell nav-row">
-      <a class="brand" href="#inizio" aria-label="Luigi Mauri, torna all’inizio">
+      <a class="brand" href="index.html" aria-label="Luigi Mauri, torna alla pagina iniziale">
         <img src="luigi-mauri-consulenza-hero.jpg" alt="" width="42" height="42">
         <span><strong>LUIGI MAURI</strong><small>con Portfolio srl</small></span>
       </a>
-      <nav aria-label="Navigazione principale"><a href="#profilo">Profilo</a><a href="#soluzioni">Soluzioni</a><a href="#metodo">Metodo</a><a href="#contatto">Contatti</a></nav>
-      <a class="header-cta" href="#contatto">Parliamone <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Apri il menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigazione mobile" hidden>
+      <a href="index.html"><span>01</span> Home</a>
+      <a href="index.html#profilo"><span>02</span> Profilo</a>
+      <a href="index.html#soluzioni"><span>03</span> Soluzioni</a>
+      <a href="calcolatori.html"><span>04</span> Calcolatori</a>
+      <a href="esempi.html"><span>05</span> Esempi</a>
+      <a href="index.html#contatto"><span>06</span> Contatti</a>
+    </nav>
   </header>
 
   <main id="inizio">

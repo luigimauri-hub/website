@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calcolatori finanziari | Luigi Mauri</title>
+  <meta name="description" content="Semplici calcolatori per visualizzare accumulo e fabbisogno pensionistico.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="menu.css"><link rel="stylesheet" href="pagine.css">
+  <script src="script.js" defer></script><script src="calcolatori.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="shell nav-row"><a class="brand" href="index.html"><img src="luigi-mauri-consulenza-hero.jpg" alt="" width="42" height="42"><span><strong>LUIGI MAURI</strong><small>con Portfolio srl</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Apri il menu"><span></span><span></span><span></span></button></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigazione principale" hidden><a href="index.html"><span>01</span> Home</a><a href="index.html#profilo"><span>02</span> Profilo</a><a href="index.html#soluzioni"><span>03</span> Soluzioni</a><a href="calcolatori.html"><span>04</span> Calcolatori</a><a href="esempi.html"><span>05</span> Esempi</a><a href="index.html#contatto"><span>06</span> Contatti</a></nav>
+  </header>
+  <main>
+    <section class="inner-hero"><div class="shell"><p class="breadcrumb"><a href="index.html">Home</a> / Calcolatori</p><p class="eyebrow">Strumenti di orientamento</p><h1>I numeri aiutano a rendere concrete le scelte.</h1><p>Due simulazioni semplici per iniziare a quantificare un obiettivo. Non sostituiscono un’analisi personalizzata.</p></div></section>
+    <section class="tools-section"><div class="shell"><div class="tools-heading"><p class="section-label">Prova i calcolatori</p><h2>Trasforma una domanda in una prima stima.</h2></div><div class="tools-grid">
+      <form class="tool-card" id="pac-form"><h2>Piano di accumulo</h2><p>Stima il capitale futuro prodotto da versamenti mensili costanti.</p><div class="fields"><div class="field"><label for="pac-monthly">Versamento mensile</label><input id="pac-monthly" type="number" min="1" value="300" required></div><div class="field"><label for="pac-years">Durata in anni</label><input id="pac-years" type="number" min="1" max="50" value="15" required></div><div class="field"><label for="pac-rate">Rendimento annuo ipotetico %</label><input id="pac-rate" type="number" min="0" max="20" step=".1" value="4" required></div></div><button class="calc-button" type="submit">Calcola il capitale</button><div class="result" id="pac-result" aria-live="polite"><small>Capitale futuro stimato</small><strong>—</strong><span>Inserisci i dati e avvia il calcolo.</span></div></form>
+      <form class="tool-card" id="pension-form"><h2>Divario pensionistico</h2><p>Quantifica in modo elementare il capitale necessario a integrare la pensione.</p><div class="fields"><div class="field"><label for="desired-income">Reddito mensile desiderato</label><input id="desired-income" type="number" min="1" value="2500" required></div><div class="field"><label for="expected-pension">Pensione mensile stimata</label><input id="expected-pension" type="number" min="0" value="1700" required></div><div class="field"><label for="income-years">Anni di integrazione</label><input id="income-years" type="number" min="1" max="40" value="20" required></div></div><button class="calc-button" type="submit">Calcola il fabbisogno</button><div class="result" id="pension-result" aria-live="polite"><small>Capitale teorico necessario</small><strong>—</strong><span>Inserisci i dati e avvia il calcolo.</span></div></form>
+    </div></div></section>
+    <div class="note"><div class="shell">Simulazioni puramente indicative. I risultati non includono costi, fiscalità, inflazione, volatilità, sequenza dei rendimenti o caratteristiche dei singoli strumenti e non costituiscono consulenza finanziaria.</div></div>
+    <section class="inner-cta"><div class="shell inner-cta-grid"><h2>Vuoi trasformare la stima in un piano?</h2><a class="button" href="mailto:luigi@luigimauri.com?subject=Richiesta%20analisi">Parliamone ↗</a></div></section>
+  </main>
+  <footer><div class="shell footer-grid"><div><strong>Luigi Mauri</strong><span>Consulenza patrimoniale · finanziaria · assicurativa</span></div><div><span>Milano · Monza · Carugate</span><a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com</a></div><p>Iscritto al RUI – IVASS, sez. E, n. E000768721.<br>Le simulazioni hanno finalità esclusivamente informative.</p></div></footer>
+</body></html>
