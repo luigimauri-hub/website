@@ -15,3 +15,7 @@ e carica anche il nuovo file menu.css.
 VERSIONE CON MENU DESKTOP E PAGINE INTERNE
 Carica tutti i file. Le nuove pagine sono calcolatori.html ed esempi.html.
 Sono necessari anche pagine.css e calcolatori.js.
+
+PAGINE PORTFOLIO INTERNE
+I contenuti Portfolio e partner sono riuniti nella sola pagina portfolio.html.
+Carica anche portfolio.css.
