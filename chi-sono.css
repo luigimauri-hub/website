@@ -20,15 +20,42 @@
 .professional-path{padding:90px 0;background:var(--blue);color:#fff}
 .path-grid>div:last-child>p{margin:0;color:#d7e0e5;font-family:var(--serif);font-size:27px;line-height:1.55}
 .location{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.experience{padding:105px 0;background:#fff}
+.experience-heading{display:grid;grid-template-columns:.38fr 1fr;gap:80px;margin-bottom:60px}
+.experience-list{border-top:1px solid var(--line)}
+.experience-card{display:grid;grid-template-columns:180px 1fr;gap:50px;padding:48px 0;border-bottom:1px solid var(--line)}
+.experience-meta{display:flex;flex-direction:column;gap:15px}
+.experience-meta span{color:var(--orange);font-size:11px;font-weight:800;letter-spacing:.12em}
+.experience-meta strong{color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.experience-kicker{margin:0 0 13px;color:var(--orange);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.experience-body h3{margin:0 0 18px;font-size:34px;line-height:1.15}
+.experience-body>p:not(.experience-kicker){margin:0;color:var(--muted);font-size:16px;line-height:1.8}
+.name-list{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);color:var(--navy);font-size:12px;font-weight:700;line-height:1.8}
+.education{padding:100px 0;background:var(--paper)}
+.education-grid{display:grid;grid-template-columns:.48fr 1fr;gap:95px}
+.education-grid h2{margin-top:20px}
+.education-list{border-top:1px solid var(--line)}
+.education-list article{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid var(--line)}
+.education-list time{color:var(--orange);font-size:12px;font-weight:800}
+.education-list h3{margin:0 0 7px;font-family:var(--sans);font-size:16px;font-weight:800}
+.education-list p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.closing-belief{padding:105px 0;background:var(--navy);color:#fff;text-align:center}
+.closing-belief p{max-width:850px;margin:0 auto 8px;color:#bec9d0;font-family:var(--serif);font-size:clamp(28px,4vw,48px);line-height:1.2}
+.closing-belief h2{margin:0 auto 38px;color:var(--orange);font-size:clamp(46px,6vw,76px)}
 @media(max-width:850px){
-  .about-grid,.working-grid,.personal-grid,.path-grid{grid-template-columns:1fr;gap:45px}
+  .about-grid,.working-grid,.personal-grid,.path-grid,.experience-heading,.education-grid{grid-template-columns:1fr;gap:45px}
   .about-photo{position:static;min-height:520px}
-  .about-intro,.working-style,.personal,.professional-path{padding:75px 0}
+  .about-intro,.working-style,.personal,.professional-path,.experience,.education,.closing-belief{padding:75px 0}
   .value-statement{padding:78px 0}
+  .experience-card{grid-template-columns:95px 1fr;gap:28px}
 }
 @media(max-width:520px){
   .about-photo{min-height:430px}
   .about-copy .lead{font-size:27px}
   .mission{padding:25px 24px;font-size:22px}
   .path-grid>div:last-child>p{font-size:23px}
+  .experience-card{grid-template-columns:1fr;gap:20px;padding:38px 0}
+  .experience-meta{flex-direction:row;justify-content:space-between}
+  .experience-body h3{font-size:29px}
+  .education-list article{grid-template-columns:60px 1fr}
 }
