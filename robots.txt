@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.luigimauri.com/sitemap.xml
+
