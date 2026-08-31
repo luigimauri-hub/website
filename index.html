@@ -25,10 +25,22 @@
     .question-response strong{color:var(--dark)}
     .method-intro{max-width:680px;margin:25px 0 0;color:#c9c4bf;font-size:14px}
     .method-note{margin:27px 0 0;padding-top:20px;border-top:1px solid var(--line-dark);color:#fff;font:500 20px/1.5 Georgia,'Times New Roman',serif}
+    .meeting-faq{margin-top:64px;padding-top:42px;border-top:1px solid var(--line-dark)}
+    .meeting-faq-title{margin:0 0 28px;color:var(--cream);font:500 clamp(30px,3.5vw,45px)/1.1 Georgia,'Times New Roman',serif;letter-spacing:-.025em}
+    .meeting-faq-grid{display:grid;grid-template-columns:repeat(2,1fr);column-gap:64px;border-top:1px solid var(--line-dark)}
+    .meeting-faq-item{padding:25px 0;border-bottom:1px solid var(--line-dark)}
+    .meeting-faq-item dt{margin:0 0 9px;color:#fff;font:500 23px/1.2 Georgia,'Times New Roman',serif}
+    .meeting-faq-item dd{margin:0;color:#c9c4bf;font-size:13px;line-height:1.75}
+    .meeting-faq-item dd strong{color:#fff}
+    .meeting-faq-item.remuneration{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.45fr;gap:64px}
+    .meeting-faq-closing{margin:32px 0 0;color:var(--cream);font:italic 500 clamp(25px,3vw,38px)/1.25 Georgia,'Times New Roman',serif;text-align:center}
     @media(max-width:760px){
       .hero-first-meeting{margin-top:21px}
       .question-list summary{min-height:0;padding:24px 0;grid-template-columns:37px 1fr 22px;gap:11px}
       .question-response{margin:-5px 0 0 48px;padding-bottom:25px;font-size:13px}
+      .meeting-faq{margin-top:48px;padding-top:34px}
+      .meeting-faq-grid{grid-template-columns:1fr}
+      .meeting-faq-item.remuneration{grid-column:auto;grid-template-columns:1fr;gap:8px}
     }
   </style>
 </head>
@@ -86,6 +98,17 @@
           <li><span>02</span><div><h3>Individuiamo le priorità</h3><p>Separiamo ciò che è urgente da ciò che può aspettare e facciamo emergere costi, rischi e sovrapposizioni che meritano attenzione.</p></div></li>
           <li><span>03</span><div><h3>Decidiamo il passo successivo</h3><p>Alla fine saprai cosa funziona, cosa approfondire e se può essere utile continuare insieme. Senza trasferimenti e senza decisioni immediate.</p></div></li>
         </ol>
+      </div>
+      <div class="shell meeting-faq" aria-labelledby="meeting-faq-title">
+        <h3 class="meeting-faq-title" id="meeting-faq-title">Cosa sapere prima di incontrarci.</h3>
+        <dl class="meeting-faq-grid">
+          <div class="meeting-faq-item"><dt>Quanto dura?</dt><dd>Circa <strong>45–60 minuti</strong>, in presenza oppure in videochiamata.</dd></div>
+          <div class="meeting-faq-item"><dt>È davvero senza impegno?</dt><dd>Sì. Il primo incontro non comporta obblighi, trasferimenti o decisioni immediate. Serve a capire se posso esserti utile.</dd></div>
+          <div class="meeting-faq-item"><dt>Che cosa devo portare?</dt><dd>Non è necessario preparare tutto. Se li hai, possono essere utili estratti degli investimenti, polizze, posizione previdenziale e una prima indicazione dei tuoi obiettivi. Possiamo anche partire semplicemente dalle tue domande.</dd></div>
+          <div class="meeting-faq-item"><dt>Con quale risultato ne esco?</dt><dd>Con un quadro più ordinato: <strong>ciò che funziona, ciò che merita un approfondimento e quali potrebbero essere i passi successivi.</strong></dd></div>
+          <div class="meeting-faq-item remuneration"><dt>Come vengo remunerato?</dt><dd>Collaboro con <strong>Portfolio Srl</strong>, intermediario assicurativo indipendente e plurimandatario. Se si arriva alla sottoscrizione di una soluzione, la mia remunerazione può derivare dalle commissioni riconosciute dagli intermediari e dalle compagnie. Modalità, costi e caratteristiche vengono illustrati prima di qualsiasi decisione.</dd></div>
+        </dl>
+        <p class="meeting-faq-closing">Il primo incontro serve a capire, non a vendere.</p>
       </div>
     </section>
     
