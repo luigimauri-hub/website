@@ -1,19 +1,20 @@
-SITO LUIGI MAURI — NUOVO CAROSELLO
+VERSIONE RESPONSIVE RIVISTA
 
-Contenuto del pacchetto
-- index.html: homepage
-- styles.css: stile e impaginazione responsive
-- carousel.js: rotazione automatica ogni 4 secondi, pausa, indicatori, tastiera e swipe
-- favicon.svg: icona del sito
-- robots.txt: indicazioni per i motori di ricerca
-- images/: fotografie ottimizzate e immagini del profilo
+Sostituisci nel repository:
+- index.html
+- styles.css
+- carousel.js
 
-Come pubblicarlo
-1. Carica index.html, styles.css, carousel.js, favicon.svg, robots.txt e la cartella images nella stessa cartella del server.
-2. Non modificare i nomi dei file o la struttura della cartella images.
-3. Apri index.html per controllare la pagina.
+La cartella images esistente rimane invariata.
 
-Le pagine interne e i contatti rimandano al sito online luigi-mauri.luigimauri.chatgpt.site.
-
-Il carosello contiene 8 scene e cambia immagine ogni 4 secondi.
-
+Principali correzioni:
+- hero ridisegnata a due colonne su desktop;
+- carosello sempre nel rapporto originale 1672:941 (circa 16:9), anche su mobile;
+- prima slide corretta: casa-coppia.webp invece del duplicato ufficio-giovani.webp;
+- scala tipografica riequilibrata;
+- dimensione minima dei microtesti aumentata;
+- sezioni e spaziature rese più compatte;
+- foto profilo non più ritagliata forzatamente;
+- ordine della pagina: hero, domande, metodo, profilo, soluzioni, clienti, Portfolio, CTA;
+- errori HTML e refusi corretti;
+- carosello rallentato a 5,8 secondi.
