@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.luigimauri.com/</loc></url>
-  <url><loc>https://www.luigimauri.com/calcolatori.html</loc></url>
-  <url><loc>https://www.luigimauri.com/esempi.html</loc></url>
-  <url><loc>https://www.luigimauri.com/portfolio.html</loc></url>
-  <url><loc>https://www.luigimauri.com/chi-sono.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/chi-sono.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/per-chi-lavoro.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/soluzioni.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/conchicollaboro.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/riservato-clienti.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/contatti.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/privacy.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/cookie-policy.html</loc></url>
+  <url><loc>https://luigimauri-hub.github.io/website/note-legali.html</loc></url>
 </urlset>

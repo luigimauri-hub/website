@@ -1,0 +1,46 @@
+SITO LUIGI MAURI — PACCHETTO COMPLETO
+Versione: 1 settembre 2026
+
+PAGINE PRINCIPALI
+- index.html — Home
+- chi-sono.html — Chi sono
+- conchicollaboro.html — Con chi collaboro
+- contatti.html — Contatti
+
+PAGINE SECONDARIE
+- per-chi-lavoro.html
+- soluzioni.html
+- riservato-clienti.html
+
+PAGINE LEGALI
+- privacy.html
+- cookie-policy.html
+- note-legali.html
+
+FILE TECNICI
+- styles.css
+- carousel.js
+- favicon.svg
+- robots.txt
+- sitemap.xml
+- 404.html
+
+IMPORTANTE: IMMAGINI
+La cartella /images con le fotografie è già presente nel repository luigimauri-hub/website.
+NON CANCELLARLA. I nuovi file HTML sono già collegati a quella cartella.
+
+COME CARICARE SU GITHUB WEB
+1. Apri il repository luigimauri-hub/website.
+2. Add file > Upload files.
+3. Trascina tutti i file presenti nella cartella principale di questo pacchetto, TRANNE la cartella images se nel repository esiste già.
+4. Conferma il commit.
+5. Conserva la cartella images già esistente.
+
+PERCORSO PRINCIPALE DEL CLIENTE
+Home > Chi sono > Con chi collaboro > Contatti
+
+NOTE
+- I link interni ora puntano tutti a pagine locali del sito.
+- Il link esterno Portfolio apre https://portfolio-italia.it in una nuova scheda.
+- Telefono e WhatsApp usano il numero +39 393 9789715.
+- Prima della pubblicazione definitiva è consigliabile far verificare privacy, cookie policy e note legali da un professionista competente, soprattutto se in futuro verranno aggiunti form, analytics o strumenti di marketing.

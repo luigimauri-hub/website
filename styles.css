@@ -285,3 +285,10 @@ p{line-height:1.7}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Final home refinements */
+.continuation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.home-teaser{background:#fff}
+.home-teaser-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,.72fr);gap:clamp(54px,8vw,100px);align-items:end}
+.home-teaser-copy p{max-width:620px;margin:0 0 24px;color:var(--muted);font-size:16px;line-height:1.8}
+@media(max-width:820px){.continuation-grid,.home-teaser-grid{grid-template-columns:1fr}.home-teaser-grid{gap:32px}}

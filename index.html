@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luigi Mauri aiuta persone, famiglie e professionisti a mettere ordine e prendere decisioni più semplici su investimenti, previdenza, protezione e patrimonio. Dal 1995.">
+  <meta name="theme-color" content="#262320">
+  <title>Luigi Mauri — Ti faccio risparmiare tempo</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="images/casa-coppia.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .continuation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .continuation-grid .feature-card{min-height:320px}
+    .continuation-grid .feature-card h3{margin-top:42px}
+    @media(max-width:760px){
+      .continuation-grid{grid-template-columns:1fr}
+      .continuation-grid .feature-card{min-height:0}
+      .continuation-grid .feature-card h3{margin-top:30px}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inizio" aria-label="Luigi Mauri, torna alla pagina iniziale">
+      <img src="images/luigi-avatar.jpg" alt="">
+      <span class="brand-copy"><strong>Luigi Mauri</strong><small>Consulente dal 1995</small></span>
+    </a>
+
+    <details class="site-menu" id="site-menu">
+      <summary aria-label="Apri il menu">
+        <span class="menu-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </summary>
+      <div class="menu-panel">
+        <nav aria-label="Navigazione principale">
+          <a href="chi-sono.html"><i>01</i><span>Chi sono</span><b>↗</b></a>
+          <a href="per-chi-lavoro.html"><i>02</i><span>Per chi lavoro</span><b>↗</b></a>
+          <a href="soluzioni.html"><i>03</i><span>Soluzioni</span><b>↗</b></a>
+          <a href="conchicollaboro.html"><i>04</i><span>Con chi collaboro</span><b>↗</b></a>
+          <a href="riservato-clienti.html"><i>05</i><span>Riservato clienti</span><b>↗</b></a>
+          <a href="contatti.html"><i>06</i><span>Contatti</span><b>↗</b></a>
+        </nav>
+        <div class="menu-contact">
+          <span>Milano · Monza · Da te · Online</span>
+          <a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com</a>
+        </div>
+      </div>
+    </details>
+  </header>
+
+  <main id="inizio">
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div class="shell hero-layout">
+        <div class="hero-intro">
+          <h1 id="hero-title">Ti faccio<br>risparmiare tempo.</h1>
+          <div class="hero-time-lines" aria-label="Come ti faccio risparmiare tempo">
+            <span>Capire cosa hai.</span>
+            <span>Confrontare le alternative.</span>
+            <span>Tenere sotto controllo investimenti, previdenza, protezione e patrimonio.</span>
+          </div>
+        </div>
+
+        <div class="hero-carousel" aria-label="Luigi Mauri incontra i clienti nei loro contesti">
+          <div class="hero-slides">
+            <img class="is-active" src="images/casa-coppia.webp" alt="Luigi Mauri conversa con una coppia nella loro casa" width="1672" height="941" decoding="async" loading="eager" fetchpriority="high" aria-hidden="false">
+            <img src="images/negozio-cliente.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/ufficio-giovani.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/cantiere-costruttore.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/videochiamata-milano.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/studio-osteopata.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/capitana-industria.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+            <img src="images/ufficio-elettrauto.webp" alt="" width="1672" height="941" decoding="async" loading="lazy" aria-hidden="true">
+          </div>
+          <div class="hero-carousel-controls">
+            <span class="hero-carousel-label" aria-live="polite">A casa del cliente</span>
+            <div class="hero-carousel-dots" aria-label="Scegli una scena">
+              <button class="is-active" aria-label="Mostra: A casa del cliente" aria-pressed="true"></button>
+              <button aria-label="Mostra: Nell’attività del cliente" aria-pressed="false"></button>
+              <button aria-label="Mostra: In ufficio" aria-pressed="false"></button>
+              <button aria-label="Mostra: In cantiere" aria-pressed="false"></button>
+              <button aria-label="Mostra: In videochiamata" aria-pressed="false"></button>
+              <button aria-label="Mostra: Dal professionista" aria-pressed="false"></button>
+              <button aria-label="Mostra: Dall’imprenditrice" aria-pressed="false"></button>
+              <button aria-label="Mostra: In officina" aria-pressed="false"></button>
+            </div>
+            <button class="hero-carousel-toggle" aria-label="Metti in pausa il carosello" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button>
+          </div>
+        </div>
+
+        <div class="hero-detail">
+          <p class="hero-description">Dal 1995 affianco persone e famiglie nelle decisioni che riguardano il loro patrimonio. Metto ordine, faccio le domande giuste e porto l’attenzione su ciò che conta davvero.</p>
+          <p class="hero-decision"><strong>Tu prendi le decisioni. Io le rendo più semplici da prendere.</strong></p>
+          <div class="hero-actions">
+            <a class="button button-bronze" href="contatti.html">Fissiamo un primo incontro <span>→</span></a>
+            <a class="text-link light-link" href="#come-lavoro">Scopri come lavoro ↘</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions-section section-pad" aria-labelledby="questions-title">
+      <div class="shell split-heading">
+        <div>
+          <p class="eyebrow">Domande concrete</p>
+          <h2 id="questions-title">Quando pensiamo al nostro patrimonio,<br>le domande sono semplici.</h2>
+        </div>
+        <p class="questions-answer">Le risposte,<br><em>non sempre.</em></p>
+      </div>
+
+      <div class="shell question-list">
+        <details>
+          <summary><span>01</span><strong>I miei investimenti stanno rendendo abbastanza?</strong><b>+</b></summary>
+          <p class="question-response">“Abbastanza” non è una percentuale uguale per tutti. Va misurato rispetto al <strong>rischio assunto, all’inflazione, ai costi e soprattutto agli obiettivi</strong> per cui quei soldi sono stati investiti.</p>
+        </details>
+        <details>
+          <summary><span>02</span><strong>Ho troppi soldi fermi sul conto?</strong><b>+</b></summary>
+          <p class="question-response">La liquidità dà tranquillità. Ma quanta ne serve davvero? E da quale momento la sicurezza comincia ad avere un costo?</p>
+        </details>
+        <details>
+          <summary><span>03</span><strong>Quanto mi servirà davvero per poter smettere di lavorare?</strong><b>+</b></summary>
+          <p class="question-response">La domanda non è soltanto quanto prenderò di pensione. <strong>È quale reddito mi servirà per continuare a vivere come voglio.</strong></p>
+        </details>
+        <details>
+          <summary><span>04</span><strong>Il mio patrimonio ha una strategia o ho semplicemente accumulato investimenti nel tempo?</strong><b>+</b></summary>
+          <p class="question-response">Fondi, ETF, polizze, immobili e liquidità possono essere tutti validi singolarmente. La vera domanda è se stanno lavorando nella stessa direzione.</p>
+        </details>
+        <details>
+          <summary><span>05</span><strong>Se oggi dovessi ricominciare da zero, rifarei le stesse scelte?</strong><b>+</b></summary>
+          <p class="question-response">È forse la domanda più utile da farsi dopo qualche anno. Non perché sia necessario cambiare, ma perché vale la pena sapere se sceglieresti ancora ciò che possiedi oggi.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="method-section section-pad" id="come-lavoro" aria-labelledby="method-title">
+      <div class="shell method-grid">
+        <div>
+          <p class="eyebrow light">Il primo confronto</p>
+          <h2 id="method-title">Prima capire.<br>Poi decidere.</h2>
+          <p class="method-intro">Un incontro di circa 45–60 minuti, senza impegno. Non è necessario preparare tutto: partiamo dalle tue domande e da ciò che hai a disposizione.</p>
+          <p class="method-note">Se non c’è nulla da cambiare, te lo dico.</p>
+        </div>
+
+        <ol class="method-list">
+          <li><span>01</span><div><h3>Ricostruiamo la situazione</h3><p>Investimenti, previdenza, protezione, liquidità, immobili e progetti: mettiamo gli elementi nello stesso quadro.</p></div></li>
+          <li><span>02</span><div><h3>Individuiamo le priorità</h3><p>Facciamo emergere ciò che funziona, ciò che merita attenzione e quello che può aspettare.</p></div></li>
+          <li><span>03</span><div><h3>Decidiamo il passo successivo</h3><p>Alla fine saprai cosa approfondire e se può essere utile continuare insieme. Senza trasferimenti e senza decisioni immediate.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="shell meeting-faq" aria-labelledby="meeting-faq-title">
+        <h3 class="meeting-faq-title" id="meeting-faq-title">Cosa sapere prima di incontrarci.</h3>
+        <dl class="meeting-faq-grid">
+          <div class="meeting-faq-item"><dt>Quanto dura?</dt><dd>Circa <strong>45–60 minuti</strong>, a Milano o Monza, presso il tuo luogo di lavoro, a casa oppure in videochiamata.</dd></div>
+          <div class="meeting-faq-item"><dt>È davvero senza impegno?</dt><dd>Sì. Il primo incontro non comporta obblighi, trasferimenti o decisioni immediate. Serve a capire se posso esserti utile.</dd></div>
+          <div class="meeting-faq-item"><dt>Che cosa devo portare?</dt><dd>Se li hai, possono essere utili estratti degli investimenti, polizze e posizione previdenziale. Possiamo anche partire semplicemente dalle tue domande.</dd></div>
+          <div class="meeting-faq-item"><dt>Come vengo remunerato?</dt><dd>Collaboro con <strong>Portfolio Srl</strong>, intermediario assicurativo indipendente e plurimandatario. Se si arriva alla sottoscrizione di una soluzione, la mia remunerazione può derivare dalle commissioni riconosciute dagli intermediari e dalle compagnie. Modalità, costi e caratteristiche vengono illustrati prima di qualsiasi decisione.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="solutions-preview section-pad" aria-labelledby="continuare-title">
+      <div class="shell split-heading">
+        <div>
+          <p class="eyebrow">Se decidiamo di continuare</p>
+          <h2 id="continuare-title">Non significa necessariamente<br>cambiare ciò che hai.</h2>
+        </div>
+        <p>Il lavoro parte da quello che possiedi già. Prima si analizza, poi si confronta. Solo dopo si decide se serve intervenire.</p>
+      </div>
+
+      <div class="shell continuation-grid">
+        <article class="feature-card">
+          <span class="card-number">01</span>
+          <h3>Analizzo quello che possiedi</h3>
+          <p>Investimenti, polizze, previdenza e liquidità: costi, rischi, fiscalità, sovrapposizioni e coerenza con i tuoi obiettivi.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="card-number">02</span>
+          <h3>Ti dico cosa terrei e cosa rivedrei</h3>
+          <p>Non parto dai prodotti. Parto da ciò che già funziona e da quello che può essere migliorato.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="card-number">03</span>
+          <h3>Confrontiamo le alternative</h3>
+          <p>Quando esistono soluzioni migliori, mettiamo a confronto vantaggi, limiti, costi e conseguenze prima di decidere.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="card-number">04</span>
+          <h3>Poi seguo quello che abbiamo deciso</h3>
+          <p>Mercati, scadenze, previdenza, protezione e cambiamenti nella tua situazione: non devi ricordarti tutto tu. <strong>Puoi anche chiedermi semplicemente un secondo parere su quello che hai già.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-teaser section-pad" aria-labelledby="about-teaser-title">
+      <div class="shell home-teaser-grid">
+        <div>
+          <p class="eyebrow">Chi sono</p>
+          <h2 id="about-teaser-title">Prima delle soluzioni,<br>viene la persona.</h2>
+        </div>
+        <div class="home-teaser-copy">
+          <p>Dal 1995 lavoro nel mondo finanziario. Il mio percorso ha attraversato anche immobiliare e arte contemporanea: esperienze diverse che hanno formato il mio modo di leggere il valore.</p>
+          <a class="text-link" href="chi-sono.html">Conosci il mio percorso →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-preview">
+      <div class="shell portfolio-grid">
+        <div class="portfolio-symbol" aria-hidden="true">P</div>
+        <div>
+          <p class="eyebrow light">Con chi collaboro</p>
+          <h2>Un rapporto personale.<br>Una struttura più ampia.</h2>
+          <p>Collaboro con <strong>Portfolio Srl</strong>. Il rapporto con il cliente resta personale; la struttura amplia le possibilità di confronto e mette a disposizione competenze diverse quando servono.</p>
+          <a class="text-link light-link" href="conchicollaboro.html">Scopri con chi collaboro ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="shell closing-grid">
+        <div><p class="eyebrow light">Un primo confronto, senza impegno</p><h2>Una buona decisione può iniziare da una conversazione.</h2></div>
+        <div>
+          <p>In 45–60 minuti ricostruiamo la tua situazione e individuiamo ciò che merita attenzione. Non devi trasferire nulla e non devi prendere decisioni immediate.</p>
+          <a class="button button-light" href="contatti.html">Prenota un primo confronto <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main shell">
+      <div class="footer-brand"><strong>Luigi Mauri</strong><span>Investimenti · Previdenza · Protezione</span><small>Milano · Monza · Da te · Online</small></div>
+      <nav aria-label="Pagine del sito">
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="per-chi-lavoro.html">Per chi lavoro</a>
+        <a href="soluzioni.html">Soluzioni</a>
+        <a href="conchicollaboro.html">Con chi collaboro</a>
+        <a href="riservato-clienti.html">Riservato clienti</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <div class="footer-contact"><span>Un primo confronto, senza impegno</span><a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com ↗</a></div>
+    </div>
+
+    <div class="footer-legal shell">
+      <p>Luigi Mauri è collaboratore di Portfolio Srl, iscritto al Registro Unico degli Intermediari assicurativi, sezione E, n. E000768721 · P. IVA 02481370969. Portfolio Srl è iscritta al RUI, sezione A, n. A000166714 ed è soggetta alla vigilanza IVASS.</p>
+      <p>I contenuti hanno finalità esclusivamente informative e non costituiscono una raccomandazione personalizzata, un’offerta o una sollecitazione all’investimento.</p>
+      <nav aria-label="Informazioni legali"><a href="privacy.html">Privacy</a><a href="cookie-policy.html">Cookie</a><a href="note-legali.html">Note legali</a></nav>
+    </div>
+  </footer>
+
+  <a class="mobile-cta" href="contatti.html">Prenota un confronto <span>→</span></a>
+  <script src="carousel.js" defer></script>
+</body>
+</html>
