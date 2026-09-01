@@ -1,0 +1,42 @@
+SITO LUIGI MAURI — VERSIONE RIVISTA
+
+PAGINE PUBBLICHE
+1. index.html
+2. chisono.html
+3. conchicollaboro.html
+4. contatti.html
+
+FILE TECNICI
+- styles.css
+- carousel.js
+- favicon.svg
+- robots.txt
+- sitemap.xml
+
+IMPORTANTE
+Non cancellare la cartella /images già presente su GitHub.
+La home ora usa solo 3 scene del carosello:
+casa-coppia.webp, videochiamata-milano.webp, ufficio-elettrauto.webp.
+Chi sono usa luigi-profilo.jpg e tutte le pagine usano luigi-avatar.jpg.
+
+NOVITÀ INSERITE
+- WhatsApp 393 9789715 visibile dalla home e sticky su mobile
+- 3 immagini in home invece di 8
+- sezione 'Quando ha senso parlarne' per qualificare il cliente
+- riferimenti verificabili: Cattolica, SDA Bocconi, RUI/Portfolio, LinkedIn
+- LinkedIn: https://www.linkedin.com/in/luigimauri/
+- link a Portfolio Italia: https://portfolio-italia.it
+- Open Graph e Twitter Card su tutte le pagine
+- canonical URL
+- title e description SEO locali Milano/Monza
+- sitemap.xml e robots.txt
+
+NOTA SULLA PROVA SOCIALE
+Non sono state inventate testimonianze, risultati o numeri di clienti.
+Per ora la fiducia è sostenuta da riferimenti professionali verificabili.
+Se in futuro vuoi inserire una vera testimonianza, deve essere reale e autorizzata.
+
+DOMINIO
+I canonical e i tag Open Graph usano per ora:
+https://luigimauri-hub.github.io/website
+Quando verrà collegato un dominio personale, questi URL andranno sostituiti.
