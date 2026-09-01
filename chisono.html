@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Luigi Mauri, consulente dal 1995. Un percorso tra finanza, immobiliare e arte contemporanea, con curiosità, esperienza e attenzione al valore." name="description"/>
+<meta content="#262320" name="theme-color"/>
+<title>Chi sono — Luigi Mauri</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link as="image" fetchpriority="high" href="images/luigi-profilo.jpg" rel="preload"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+    .about-page{background:#fff;color:var(--ink)}
+    .about-hero{padding:clamp(68px,7vw,96px) 0;background:var(--dark);color:#fff}
+    .about-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.78fr);gap:clamp(56px,7vw,96px);align-items:center}
+    .about-copy-wrap{max-width:700px}
+    .about-hero h1{margin:0;max-width:720px;font-size:clamp(48px,5vw,70px);line-height:1;letter-spacing:-.03em}
+    .about-hero h1 em{display:block;margin-top:8px;color:var(--cream);font-style:italic}
+    .about-lead{max-width:640px;margin:30px 0 0;color:#d0cbc6;font-size:17px;line-height:1.8}
+    .about-photo{margin:0}
+    .about-photo img{width:100%;height:auto;max-height:650px;object-fit:contain;box-shadow:0 28px 70px rgba(0,0,0,.24)}
+    .about-photo figcaption{margin-top:12px;color:rgba(255,255,255,.48);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    .about-section{padding:clamp(76px,8vw,108px) 0}
+    .section-grid{display:grid;grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);gap:clamp(52px,7vw,92px);align-items:start}
+    .section-grid h2{font-size:clamp(38px,4vw,56px)}
+    .section-copy{max-width:760px}
+    .section-copy p{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.82}
+    .section-copy .lead{color:var(--dark);font:500 25px/1.45 Georgia,'Times New Roman',serif}
+    .experiences{background:var(--paper)}
+    .experiences-heading{max-width:860px;margin-bottom:48px}
+    .experiences-heading h2{font-size:clamp(40px,4.2vw,58px)}
+    .experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .experience-card{min-height:410px;padding:30px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-top:3px solid var(--bronze)}
+    .experience-card small{color:var(--bronze);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .experience-card h3{margin:48px 0 18px;font-size:clamp(28px,2.5vw,36px);line-height:1.08}
+    .experience-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.75}
+    .experience-bottom{margin-top:auto;padding-top:22px;border-top:1px solid var(--line);color:var(--dark);font-size:12px;font-weight:700;line-height:1.6}
+    .value-line{max-width:900px;margin:62px auto 0;text-align:center;color:var(--dark);font:italic 500 clamp(34px,4.2vw,54px)/1.18 Georgia,'Times New Roman',serif}
+    .value-line span{color:var(--bronze)}
+    .what-remains .quote{margin-top:26px;color:var(--bronze);font:italic 500 clamp(28px,3vw,40px)/1.3 Georgia,'Times New Roman',serif}
+    .path{background:#312e2a;color:#fff}
+    .path-grid{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:clamp(58px,8vw,100px);align-items:start}
+    .path h2{color:#fff;font-size:clamp(39px,4vw,56px)}
+    .path-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line-dark)}
+    .path-list li{display:grid;grid-template-columns:105px 1fr;gap:24px;padding:23px 0;border-bottom:1px solid var(--line-dark)}
+    .path-list time,.path-list .path-label{padding-top:4px;color:var(--cream);font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .path-list strong{display:block;color:#fff;font:500 23px/1.25 Georgia,'Times New Roman',serif}
+    .path-list p{margin:7px 0 0;color:#bdb8b3;font-size:14px;line-height:1.7}
+    .human{background:var(--paper)}
+    .human-grid{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr);gap:clamp(54px,7vw,92px);align-items:start}
+    .human h2{font-size:clamp(39px,4vw,55px)}
+    .human-copy p{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.82}
+    .human-copy .human-highlight{color:var(--dark);font:500 24px/1.5 Georgia,'Times New Roman',serif}
+    .about-cta{padding:clamp(82px,8vw,108px) 0;background:var(--brown);color:#fff}
+    .about-cta-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:clamp(60px,8vw,100px);align-items:center}
+    .about-cta h2{max-width:720px;color:#fff;font-size:clamp(40px,4.4vw,60px)}
+    .about-cta p{max-width:570px;margin:0 0 28px;color:#d3ccc6;font-size:16px;line-height:1.78}
+    @media(max-width:960px){
+      .about-hero-grid,.section-grid,.path-grid,.human-grid,.about-cta-grid{grid-template-columns:1fr;gap:44px}
+      .experience-grid{grid-template-columns:1fr}
+      .experience-card{min-height:0}
+      .experience-card h3{margin-top:34px}
+      .about-photo{max-width:620px}
+    }
+    @media(max-width:640px){
+      .about-hero{padding:42px 0 64px}
+      .about-hero-grid{display:flex;flex-direction:column}
+      .about-photo{order:1}
+      .about-copy-wrap{order:2}
+      .about-hero h1{font-size:clamp(42px,12vw,54px)}
+      .about-lead{font-size:16px}
+      .experience-card{padding:25px}
+      .path-list li{grid-template-columns:78px 1fr;gap:16px}
+      .path-list strong{font-size:21px}
+    }
+  </style>
+</head>
+<body class="about-page">
+<header class="site-header">
+<a aria-label="Luigi Mauri, torna alla pagina iniziale" class="brand" href="index.html">
+<img alt="" src="images/luigi-avatar.jpg"/>
+<span class="brand-copy"><strong>Luigi Mauri</strong><small>Consulente dal 1995</small></span>
+</a>
+<details class="site-menu" id="site-menu">
+<summary aria-label="Apri il menu"><span class="menu-label">Menu</span><span aria-hidden="true" class="menu-icon"><i></i><i></i></span></summary>
+<div class="menu-panel">
+<nav aria-label="Navigazione principale">
+<a href="index.html"><i>01</i><span>Home</span><b>↗</b></a>
+<a href="chisono.html"><i>02</i><span>Chi sono</span><b>↗</b></a>
+<a href="conchicollaboro.html"><i>03</i><span>Con chi collaboro</span><b>↗</b></a>
+<a href="contatti.html"><i>04</i><span>Contatti</span><b>↗</b></a>
+</nav>
+<div class="menu-contact"><span>Milano · Monza · Da te · Online</span><a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com</a></div>
+</div>
+</details>
+</header>
+<main>
+<section class="about-hero">
+<div class="shell about-hero-grid">
+<div class="about-copy-wrap">
+<p class="eyebrow light">Chi sono</p>
+<h1>Trent’anni di esperienza.<em>La curiosità del primo giorno.</em></h1>
+<p class="about-lead">Sono Luigi Mauri. Lavoro nel mondo finanziario dal 1995, ma il mio percorso non è stato soltanto finanza.</p>
+</div>
+<figure class="about-photo">
+<img alt="Luigi Mauri" fetchpriority="high" loading="eager" src="images/luigi-profilo.jpg"/>
+<figcaption>Luigi Mauri · Milano e Monza</figcaption>
+</figure>
+</div>
+</section>
+<section class="about-section journey">
+<div class="shell section-grid">
+<div><p class="eyebrow">Il mio percorso</p><h2>Esperienze diverse.<br/>Uno stesso filo.</h2></div>
+<div class="section-copy">
+<p class="lead">Mi sono laureato in Economia e Commercio all’Università Cattolica di Milano.</p>
+<p>Nei primi anni Novanta ho trascorso un anno a Boston, un’esperienza che ha ampliato il mio modo di guardare al lavoro e alle persone.</p>
+<p>Dal 1995 ho lavorato nei mercati finanziari e nella gestione del risparmio. Negli anni ho approfondito Private Banking e Real Estate alla SDA Bocconi e ho affiancato alla finanza esperienze dirette nello sviluppo immobiliare.</p>
+</div>
+</div>
+</section>
+<section class="about-section experiences">
+<div class="shell">
+<div class="experiences-heading">
+<p class="eyebrow">Tre esperienze</p>
+<h2>Finanza, immobiliare e arte.<br/>Tre modi diversi di leggere il valore.</h2>
+</div>
+<div class="experience-grid">
+<article class="experience-card">
+<small>Finanza · dal 1995</small>
+<h3>I numeri contano. Le persone di più.</h3>
+<p>È il mio lavoro da oltre trent’anni. Mi ha insegnato che mercati, rendimento e rischio sono importanti, ma che le decisioni appartengono sempre alle persone.</p>
+<div class="experience-bottom">Mercati finanziari · gestione del risparmio · relazione con il cliente</div>
+</article>
+<article class="experience-card">
+<small>Immobiliare</small>
+<h3>Tra un progetto e il risultato c’è la realtà.</h3>
+<p>Essere direttamente coinvolto in operazioni immobiliari mi ha insegnato quanto contino tempi, costi, imprevisti, margini di sicurezza ed esecuzione.</p>
+<div class="experience-bottom">Sviluppo · finanziamento · marketing · commercializzazione</div>
+</article>
+<article class="experience-card">
+<small>Arte urbana contemporanea</small>
+<h3>Il valore non coincide sempre con il prezzo.</h3>
+<p>Da collezionista e curatore ho imparato a osservare, selezionare e distinguere ciò che è immediatamente visibile da ciò che merita davvero attenzione.</p>
+<div class="experience-bottom">Collezionista · curatore · Urban Painting</div>
+</article>
+</div>
+<p class="value-line">Il prezzo si vede. <span>Il valore si interpreta.</span></p>
+</div>
+</section>
+<section class="about-section what-remains">
+<div class="shell section-grid">
+<div><p class="eyebrow">Cosa mi ha lasciato tutto questo</p><h2>Non fermarmi alla prima risposta.</h2></div>
+<div class="section-copy">
+<p class="lead">Esperienze molto diverse mi hanno lasciato la stessa abitudine: cercare di capire prima di giudicare.</p>
+<p>Mi piace osservare come funzionano le cose, confrontare punti di vista diversi e cercare ciò che non è immediatamente evidente.</p>
+<p>È probabilmente la caratteristica che più mi rappresenta: <strong>la curiosità.</strong></p>
+<p class="quote">Continuare a fare domande, anche quando sembra di conoscere già la risposta.</p>
+</div>
+</div>
+</section>
+<section class="about-section path">
+<div class="shell path-grid">
+<div><p class="eyebrow light">Il percorso, in breve</p><h2>Pochi passaggi.<br/>Molti anni di esperienza.</h2></div>
+<ol class="path-list">
+<li><time>1993</time><div><strong>Economia e Commercio</strong><p>Università Cattolica di Milano.</p></div></li>
+<li><span class="path-label">Dal 1995</span><div><strong>Mercati finanziari</strong><p>Esperienza nella gestione del risparmio e nella relazione con il cliente.</p></div></li>
+<li><span class="path-label">SDA Bocconi</span><div><strong>Private Banking e Real Estate</strong><p>Percorsi di approfondimento dedicati alla gestione patrimoniale e all’immobiliare.</p></div></li>
+<li><span class="path-label">NABA</span><div><strong>Curatela</strong><p>Formazione legata all’attività nell’arte urbana contemporanea.</p></div></li>
+<li><span class="path-label">Oggi</span><div><strong>Portfolio Srl</strong><p>Collaboro con Portfolio Srl come intermediario iscritto al RUI, sezione E.</p></div></li>
+</ol>
+</div>
+</section>
+<section class="about-section human">
+<div class="shell human-grid">
+<div><p class="eyebrow">Fuori dal lavoro</p><h2>La curiosità continua altrove.</h2></div>
+<div class="human-copy">
+<p class="human-highlight">L’arte urbana contemporanea continua a essere una delle mie grandi passioni.</p>
+<p>Colleziono, studio e frequento mostre e artisti. Mi interessa capire come nasce il valore anche lontano dalla finanza.</p>
+<p>Quando posso, lascio la scrivania per una bicicletta, un paio di sci o semplicemente per andare a vedere qualcosa che non conosco ancora.</p>
+</div>
+</div>
+</section>
+<section class="about-cta">
+<div class="shell about-cta-grid">
+<div><p class="eyebrow light">Il passo successivo</p><h2>Con chi collaboro.</h2></div>
+<div>
+<p>Il rapporto con il cliente resta personale, ma alle mie spalle c’è una struttura più ampia. Scopri come è organizzata.</p>
+<a class="button button-light" href="conchicollaboro.html">Scopri con chi collaboro <span>→</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-main shell">
+<div class="footer-brand"><strong>Luigi Mauri</strong><span>Investimenti · Previdenza · Protezione</span><small>Milano · Monza · Da te · Online</small></div>
+<nav aria-label="Pagine del sito">
+<a href="index.html">Home</a>
+<a href="chisono.html">Chi sono</a>
+<a href="conchicollaboro.html">Con chi collaboro</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<div class="footer-contact"><span>Un primo confronto, senza impegno</span><a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com ↗</a></div>
+</div>
+<div class="footer-legal shell">
+<p>Luigi Mauri è collaboratore di Portfolio Srl, iscritto al Registro Unico degli Intermediari assicurativi, sezione E, n. E000768721 · P. IVA 02481370969. Portfolio Srl è iscritta al RUI, sezione A, n. A000166714 ed è soggetta alla vigilanza IVASS.</p>
+<p>I contenuti hanno finalità esclusivamente informative e non costituiscono una raccomandazione personalizzata, un’offerta o una sollecitazione all’investimento.</p>
+
+</div>
+</footer>
+<a class="mobile-cta" href="contatti.html">Prenota un confronto <span>→</span></a>
+<script>
+(() => {
+  const menu = document.querySelector("#site-menu");
+  document.addEventListener("click", (event) => {
+    if (menu?.open && !menu.contains(event.target)) menu.open = false;
+  });
+  menu?.querySelectorAll("a").forEach((anchor) => {
+    anchor.addEventListener("click", () => { menu.open = false; });
+  });
+})();
+</script>
+</body>
+</html>
