@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Luigi Mauri collabora con Portfolio Srl, intermediario assicurativo indipendente e plurimandatario. Un rapporto personale sostenuto da una struttura più ampia." name="description"/>
+<meta content="#262320" name="theme-color"/>
+<title>Con chi collaboro | Portfolio Srl | Luigi Mauri</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+    .partner-page{background:#fff;color:var(--ink)}
+    .partner-hero{padding:clamp(76px,8vw,112px) 0;background:var(--dark);color:#fff}
+    .partner-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:clamp(48px,7vw,96px);align-items:start}
+    .partner-statement{max-width:900px;margin:0;color:#fff;font:500 clamp(26px,3vw,36px)/1.38 Georgia,'Times New Roman',serif;letter-spacing:-.015em}
+    .partner-statement strong{color:var(--cream);font-weight:500}
+    .partner-intro{max-width:780px;margin:24px 0 0;color:#d1ccc7;font-size:17px;line-height:1.82}
+    .partner-logo{display:block;margin-top:30px;padding:4px 0;transition:opacity .2s ease}
+    .partner-logo:hover{opacity:.78}
+    .partner-logo img{display:block;width:100%;max-width:230px;height:auto}
+    .partner-section{padding:clamp(76px,8vw,108px) 0}
+    .section-heading{display:grid;grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);gap:clamp(52px,7vw,92px);align-items:start;margin-bottom:48px}
+    .section-heading h2{max-width:620px;font-size:clamp(39px,4vw,56px)}
+    .section-heading>p{max-width:690px;margin:0;color:var(--muted);font-size:16px;line-height:1.82}
+    .benefits{background:var(--paper)}
+    .benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .benefit-card{min-height:330px;padding:32px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-top:3px solid var(--bronze)}
+    .benefit-card span{color:var(--bronze);font-size:11px;font-weight:800;letter-spacing:.08em}
+    .benefit-card h3{margin:44px 0 18px;font-size:clamp(27px,2.3vw,34px);line-height:1.12}
+    .benefit-card p{margin:0;color:var(--muted);font-size:16px;line-height:1.72}
+    .roles{background:#fff}
+    .role-list{border-top:1px solid var(--line)}
+    .role{display:grid;grid-template-columns:180px minmax(0,1fr);gap:36px;padding:28px 0;border-bottom:1px solid var(--line)}
+    .role strong{color:var(--dark);font:500 26px/1.2 Georgia,'Times New Roman',serif}
+    .role p{max-width:780px;margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+    .roles-link{display:flex;justify-content:flex-end;margin-top:32px}
+    .roles-link .button{background:var(--dark);color:#fff;border-color:var(--dark)}
+    .transparency{background:#312e2a;color:#fff}
+    .transparency-grid{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:clamp(58px,8vw,100px);align-items:start}
+    .transparency h2{color:#fff;font-size:clamp(39px,4vw,56px)}
+    .transparency-copy p{margin:0 0 20px;color:#c6c0ba;font-size:16px;line-height:1.78}
+    .transparency-copy strong{color:#fff}
+    .transparency-note{margin-top:28px;padding-top:24px;border-top:1px solid var(--line-dark);color:var(--cream)!important;font:italic 500 24px/1.45 Georgia,'Times New Roman',serif!important}
+    .partner-link{display:inline-flex;align-items:center;gap:12px;padding-bottom:5px;border-bottom:1px solid currentColor;font-size:13px;font-weight:800}
+    .partner-cta{padding:clamp(82px,8vw,108px) 0;background:var(--brown);color:#fff}
+    .partner-cta-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:clamp(60px,8vw,100px);align-items:center}
+    .partner-cta h2{max-width:760px;color:#fff;font-size:clamp(40px,4.4vw,60px)}
+    .partner-cta p{max-width:570px;margin:0 0 28px;color:#d2cbc4;font-size:16px;line-height:1.8}
+    @media(max-width:960px){
+      .partner-hero-grid,.section-heading,.transparency-grid,.partner-cta-grid{grid-template-columns:1fr;gap:44px}
+      .partner-logo{margin-top:0}
+      .partner-logo img{max-width:210px}
+      .benefit-grid{grid-template-columns:1fr}
+      .benefit-card{min-height:0}
+      .benefit-card h3{margin-top:34px}
+    }
+    @media(max-width:640px){
+      .partner-hero{padding:46px 0 68px}
+      .partner-statement{font-size:clamp(25px,7vw,31px)}
+      .partner-intro{font-size:16px}
+      .role{grid-template-columns:1fr;gap:12px}
+      .role strong{font-size:23px}
+      .roles-link{justify-content:stretch}
+      .roles-link .button{width:100%;justify-content:space-between}
+    }
+  </style>
+<link href="https://luigimauri-hub.github.io/website/conchicollaboro.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="Luigi Mauri" property="og:site_name"/><meta content="Con chi collaboro | Portfolio Srl | Luigi Mauri" property="og:title"/><meta content="Luigi Mauri collabora con Portfolio Srl, intermediario assicurativo indipendente e plurimandatario. Un rapporto personale sostenuto da una struttura più ampia." property="og:description"/><meta content="https://luigimauri-hub.github.io/website/conchicollaboro.html" property="og:url"/><meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" property="og:image"/><meta content="Luigi Mauri" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Con chi collaboro | Portfolio Srl | Luigi Mauri" name="twitter:title"/><meta content="Luigi Mauri collabora con Portfolio Srl, intermediario assicurativo indipendente e plurimandatario. Un rapporto personale sostenuto da una struttura più ampia." name="twitter:description"/><meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" name="twitter:image"/></head>
+<body class="partner-page">
+<header class="site-header">
+<a aria-label="Luigi Mauri, torna alla pagina iniziale" class="brand" href="index.html">
+<img alt="" src="images/luigi-avatar.jpg"/>
+<span class="brand-copy"><strong>Luigi Mauri</strong><small>Consulente dal 1995</small></span>
+</a>
+<details class="site-menu" id="site-menu">
+<summary aria-label="Apri il menu">
+<span class="menu-label">Menu</span>
+<span aria-hidden="true" class="menu-icon"><i></i><i></i></span>
+</summary>
+<div class="menu-panel">
+<nav aria-label="Navigazione principale"><a href="index.html"><i>01</i><span>Home</span><b>↗</b></a><a href="chisono.html"><i>02</i><span>Chi sono</span><b>↗</b></a><a aria-current="page" href="conchicollaboro.html"><i>03</i><span>Con chi collaboro</span><b>↗</b></a><a href="contatti.html"><i>04</i><span>Contatti</span><b>↗</b></a></nav>
+<div class="menu-contact"><span>Milano · Monza · Da te · Online</span><div class="menu-contact-links"><a href="tel:+393939789715">393 9789715</a><a href="https://www.linkedin.com/in/luigimauri/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a></div></div>
+</div>
+</details>
+</header>
+<main>
+<section class="partner-hero">
+<div class="shell partner-hero-grid">
+<div>
+<p class="eyebrow light">Con chi collaboro</p>
+<h1 class="partner-statement">Collaboro con <strong>Portfolio Srl</strong>, intermediario assicurativo indipendente e plurimandatario.</h1>
+<p class="partner-intro">
+            Il rapporto con te resta personale. La struttura amplia le possibilità di confronto
+            e mette a disposizione competenze diverse quando servono.
+          </p>
+</div>
+<a aria-label="Visita il sito Portfolio Italia" class="partner-logo" href="https://portfolio-italia.it" rel="noopener noreferrer" target="_blank">
+<img alt="Portfolio" height="72" src="https://www.portfolio-italia.it/wp-content/uploads/2020/10/logo-portfolio-footer.webp" width="365"/>
+</a>
+</div>
+</section>
+<section class="partner-section benefits">
+<div class="shell">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Cosa significa per te</p>
+<h2>Più possibilità.<br/>Un solo riferimento.</h2>
+</div>
+<p>
+            La struttura deve servire il cliente, non complicare il rapporto.
+            Il punto non è quante realtà ci siano dietro, ma cosa cambia concretamente
+            quando occorre valutare una soluzione.
+          </p>
+</div>
+<div class="benefit-grid">
+<article class="benefit-card">
+<span>01</span>
+<h3>Più possibilità di confronto</h3>
+<p>Non essere legati a una sola compagnia amplia le alternative che possono essere valutate quando serve cercare una soluzione adatta alla tua situazione.</p>
+</article>
+<article class="benefit-card">
+<span>02</span>
+<h3>Una persona di riferimento</h3>
+<p>Anche quando entrano in gioco compagnie, partner o specialisti, il rapporto e il confronto con te restano personali.</p>
+</article>
+<article class="benefit-card">
+<span>03</span>
+<h3>Competenze quando servono</h3>
+<p>Alcune situazioni richiedono approfondimenti previdenziali, fiscali o successori. In questi casi posso confrontarmi con la struttura e con professionisti dedicati.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="partner-section roles">
+<div class="shell">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Chi fa cosa</p>
+<h2>Ruoli chiari.<br/>Responsabilità precise.</h2>
+</div>
+<p>
+            Quando si parla di investimenti e previdenza è utile sapere
+            chi segue il cliente, chi intermedia e chi emette gli strumenti eventualmente scelti.
+          </p>
+</div>
+<div class="role-list">
+<div class="role">
+<strong>Io</strong>
+<p>Conosco la tua situazione, raccolgo le informazioni, analizzo le esigenze, confronto le alternative e seguo nel tempo le decisioni prese.</p>
+</div>
+<div class="role">
+<strong>Portfolio Srl</strong>
+<p>È l’intermediario con cui collaboro e mette a disposizione rapporti con compagnie, partner, strutture operative e competenze specialistiche.</p>
+</div>
+<div class="role">
+<strong>Compagnie e partner</strong>
+<p>Emettono e gestiscono i prodotti eventualmente scelti, secondo caratteristiche, condizioni e costi illustrati prima della sottoscrizione.</p>
+</div>
+</div>
+<div class="roles-link"><a class="button" href="https://www.portfolio-italia.it/partners/" rel="noopener noreferrer" target="_blank">Scopri i partner di Portfolio <span>↗</span></a></div>
+</div>
+</section>
+<section class="partner-section transparency">
+<div class="shell transparency-grid">
+<div>
+<p class="eyebrow light">Trasparenza</p>
+<h2>Anche la remunerazione deve essere comprensibile.</h2>
+</div>
+<div class="transparency-copy">
+<p>
+            Se si arriva alla sottoscrizione di una soluzione,
+            la mia remunerazione può derivare dalle commissioni riconosciute dagli intermediari e dalle compagnie.
+          </p>
+<p><strong>Modalità, costi e caratteristiche vengono illustrati prima di qualsiasi decisione.</strong></p>
+<p class="transparency-note">La struttura amplia le possibilità. La relazione resta personale.</p>
+<a class="partner-link" href="https://portfolio-italia.it" rel="noopener noreferrer" target="_blank">
+            Approfondisci su portfolio-italia.it ↗
+          </a>
+</div>
+</div>
+</section>
+<section class="partner-cta">
+<div class="shell partner-cta-grid">
+<div>
+<p class="eyebrow light">Il rapporto con il cliente</p>
+<h2>La struttura è importante. Ma il tuo riferimento resto io.</h2>
+</div>
+<div>
+<p>
+            Possiamo incontrarci a Milano, Monza, presso di te oppure online.
+            Il primo confronto serve a capire la tua situazione e se posso esserti utile.
+          </p>
+<a class="button button-light" href="contatti.html">
+            Fissiamo un primo incontro <span>→</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-main shell">
+<div class="footer-brand">
+<strong>Luigi Mauri</strong>
+<span>Investimenti · Previdenza · Patrimonio</span>
+<small>Milano · Monza · Da te · Online</small>
+</div>
+<nav aria-label="Pagine del sito"><a href="index.html">Home</a><a href="chisono.html">Chi sono</a><a href="conchicollaboro.html">Con chi collaboro</a><a href="contatti.html">Contatti</a></nav>
+<div class="footer-contact"><span>Un primo confronto, senza impegno</span><a href="tel:+393939789715">393 9789715</a><a href="https://wa.me/393939789715" rel="noopener noreferrer" target="_blank">WhatsApp ↗</a><a href="https://www.linkedin.com/in/luigimauri/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com ↗</a></div>
+</div>
+<div class="footer-legal shell">
+<p>
+        Luigi Mauri è collaboratore di Portfolio Srl, iscritto al Registro Unico degli Intermediari assicurativi,
+        sezione E, n. E000768721 · P. IVA 02481370969. Portfolio Srl è iscritta al RUI,
+        sezione A, n. A000166714 ed è soggetta alla vigilanza IVASS.
+      </p>
+<p>
+        I contenuti hanno finalità esclusivamente informative e non costituiscono una raccomandazione personalizzata,
+        un’offerta o una sollecitazione all’investimento.
+      </p>
+</div>
+</footer>
+<a class="mobile-cta" href="https://wa.me/393939789715" rel="noopener noreferrer" target="_blank">WhatsApp · 393 9789715 <span>→</span></a>
+<script>
+    (() => {
+      const menu = document.querySelector("#site-menu");
+      document.addEventListener("click", (event) => {
+        if (menu?.open && !menu.contains(event.target)) menu.open = false;
+      });
+      menu?.querySelectorAll("a").forEach((anchor) => {
+        anchor.addEventListener("click", () => { menu.open = false; });
+      });
+    })();
+  </script>
+</body>
+</html>
