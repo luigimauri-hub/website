@@ -6,7 +6,6 @@
   const toggle = document.querySelector('.hero-carousel-toggle');
   const menu = document.querySelector('#site-menu');
 
-  const labels = ['A casa', 'Online', 'Nel luogo di lavoro'];
   const alts = [
     'Luigi Mauri durante un incontro in una casa',
     'Luigi Mauri durante una videochiamata',
