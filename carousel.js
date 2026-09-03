@@ -7,6 +7,11 @@
   const menu = document.querySelector('#site-menu');
 
   const alts = [
+    const labels = [
+  'A casa',
+  'Online',
+  'Nel luogo di lavoro'
+];
     'Luigi Mauri durante un incontro in una casa',
     'Luigi Mauri durante una videochiamata',
     'Luigi Mauri durante un incontro sul luogo di lavoro'
