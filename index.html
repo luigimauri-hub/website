@@ -11,10 +11,16 @@
 <link href="styles.css" rel="stylesheet"/>
 <style>
 .goals-section{background:#f4f1ec}
-.goals-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:clamp(40px,7vw,100px);align-items:end}
+.goals-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:clamp(40px,7vw,100px);align-items:start}
 .goals-intro h2{margin:0;max-width:780px;font-size:clamp(38px,4.4vw,58px);line-height:1.06;letter-spacing:-.035em}
-.goals-lead{margin:0 0 4px;max-width:520px;color:var(--bronze);font:500 clamp(24px,2.5vw,34px)/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.02em}
-.goals-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(48px,7vw,88px);border-top:1px solid rgba(38,35,32,.22);border-bottom:1px solid rgba(38,35,32,.22)}
+.goals-opening{max-width:560px}
+.goals-opening p{margin:0;color:var(--muted);font-size:17px;line-height:1.8}
+.trading-note{display:grid;grid-template-columns:minmax(180px,.35fr) minmax(0,1.2fr);gap:clamp(32px,7vw,96px);margin-top:clamp(48px,7vw,82px);padding:clamp(30px,4vw,44px) 0;border-top:1px solid rgba(38,35,32,.22);border-bottom:1px solid rgba(38,35,32,.22)}
+.trading-note-label{margin:0;color:var(--bronze);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.trading-note-copy p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}
+.trading-note-copy p+p{margin-top:14px;color:var(--dark);font:500 clamp(22px,2.3vw,30px)/1.3 Georgia,'Times New Roman',serif;letter-spacing:-.02em}
+.goals-focus{display:block;max-width:920px;margin-top:clamp(46px,6vw,70px);font:500 clamp(25px,3vw,38px)/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.025em}
+.goals-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:clamp(38px,5vw,60px);border-top:1px solid rgba(38,35,32,.22);border-bottom:1px solid rgba(38,35,32,.22)}
 .goal-card{padding:34px clamp(20px,3vw,40px) 38px;border-right:1px solid rgba(38,35,32,.22)}
 .goal-card:first-child{padding-left:0}.goal-card:last-child{padding-right:0;border-right:0}
 .goal-card span{display:block;margin-bottom:46px;color:var(--bronze);font-size:13px;letter-spacing:.14em}
@@ -23,10 +29,6 @@
 .goals-principle{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(36px,7vw,96px);margin-top:clamp(50px,7vw,88px);align-items:end}
 .goals-principle p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}
 .goals-principle strong{display:block;font:500 clamp(25px,3vw,38px)/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.025em}
-.risk-block{margin-top:clamp(70px,10vw,130px);padding-top:clamp(50px,7vw,84px);border-top:1px solid rgba(38,35,32,.22)}
-.risk-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,6vw,82px)}
-.risk-copy p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}
-.risk-closing{display:block;max-width:900px;margin-top:clamp(38px,5vw,62px);font:500 clamp(26px,3.1vw,40px)/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.025em}
 .meeting-only{background:#fff}
 .meeting-heading{margin-bottom:clamp(34px,5vw,58px)}
 .meeting-heading h2{max-width:900px;margin:0;font-size:clamp(38px,4.6vw,60px);line-height:1.04;letter-spacing:-.035em}
@@ -43,7 +45,7 @@
 .hero-time-note{max-width:590px;margin-bottom:12px;color:#c7c2bd;font-size:15px;line-height:1.65}
 .hero-time-label{margin-top:5px;color:var(--bronze-light);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .hero-detail .hero-description+.hero-description{margin-top:15px}
-@media(max-width:760px){.goals-intro,.goals-principle,.risk-copy,.meeting-cta{grid-template-columns:1fr}.goals-grid{grid-template-columns:1fr}.goal-card,.goal-card:first-child,.goal-card:last-child{padding:28px 0;border-right:0;border-bottom:1px solid rgba(38,35,32,.22)}.goal-card:last-child{border-bottom:0}.goal-card span{margin-bottom:22px}.goals-principle{align-items:start}.meeting-cta{align-items:start}.meeting-only .meeting-faq-item dd{font-size:15px}.meeting-cta{padding:32px 24px}}
+@media(max-width:760px){.goals-intro,.trading-note,.goals-principle,.meeting-cta{grid-template-columns:1fr}.goals-grid{grid-template-columns:1fr}.goal-card,.goal-card:first-child,.goal-card:last-child{padding:28px 0;border-right:0;border-bottom:1px solid rgba(38,35,32,.22)}.goal-card:last-child{border-bottom:0}.goal-card span{margin-bottom:22px}.goals-principle{align-items:start}.meeting-cta{align-items:start}.meeting-only .meeting-faq-item dd{font-size:15px}.meeting-cta{padding:32px 24px}}
 </style>
 <link href="https://luigimauri-hub.github.io/website/" rel="canonical"/><meta content="website" property="og:type"/><meta content="Luigi Mauri" property="og:site_name"/><meta content="Luigi Mauri | Investimenti, previdenza e patrimonio | Milano Monza" property="og:title"/><meta content="Da oltre trent’anni Luigi Mauri mette ordine tra investimenti, previdenza e patrimonio. Milano, Monza, da te e online." property="og:description"/><meta content="https://luigimauri-hub.github.io/website/" property="og:url"/><meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" property="og:image"/><meta content="Luigi Mauri" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Luigi Mauri | Investimenti, previdenza e patrimonio | Milano Monza" name="twitter:title"/><meta content="Da oltre trent’anni Luigi Mauri mette ordine tra investimenti, previdenza e patrimonio. Milano, Monza, da te e online." name="twitter:description"/><meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" name="twitter:image"/></head>
 <body>
@@ -105,22 +107,27 @@
 <section aria-labelledby="goals-title" class="goals-section section-pad" id="come-lavoro">
 <div class="shell">
 <div class="goals-intro">
-<h2 id="goals-title">Un portafoglio dovrebbe riflettere il ruolo che il denaro avrà nella tua vita.</h2>
-<p class="goals-lead">Ogni obiettivo ha il suo tempo.</p>
+<h2 id="goals-title">Il tuo portafoglio dovrebbe fare quello che serve a te, non il contrario.</h2>
+<div class="goals-opening">
+<p>La liquidità necessaria per la vita quotidiana — emergenze, spese impreviste e fondo di sicurezza — resta dove deve stare: <strong>sul conto corrente che hai già presso la tua banca</strong>. Insieme individuiamo la cifra giusta.</p>
 </div>
+</div>
+<div class="trading-note">
+<p class="trading-note-label">Un piccolo inciso</p>
+<div class="trading-note-copy">
+<p>Poi, qualche volta, c’è anche il conto aperto dopo aver ascoltato l’ultimo guru sui social o l’amico con “la dritta giusta”: quello con cui si prova a sfidare i mercati facendo trading online.</p>
+<p>Qualcuno guadagna. Ma non è su questo che costruirei il futuro.</p>
+</div>
+</div>
+<strong class="goals-focus">Da qui comincia il mio lavoro: collegare ogni obiettivo a un investimento pensato per raggiungerlo, non a una scommessa.</strong>
 <div class="goals-grid">
-<article class="goal-card"><span>01</span><h3>Breve termine: la liquidità serve per la stabilità entro un anno.</h3><p>Emergenze, spese impreviste, fondo di sicurezza.</p></article>
-<article class="goal-card"><span>02</span><h3>Medio termine: una parte per i progetti.</h3><p>La casa, gli studi dei figli o un progetto a cinque o dieci anni.</p></article>
-<article class="goal-card"><span>03</span><h3>Lungo termine: la parte dinamica per il futuro.</h3><p>La pensione, la crescita del patrimonio, gli obiettivi più ambiziosi e ciò che vorrai lasciare.</p></article>
+<article class="goal-card"><span>01</span><h3>Medio termine</h3><p>I progetti dei prossimi 5–10 anni: la casa, gli studi dei figli, un cambiamento professionale o qualcosa che hai in mente da tempo.</p></article>
+<article class="goal-card"><span>02</span><h3>Lungo termine</h3><p>La parte dinamica destinata al futuro: integrare la pensione, costruire maggiore indipendenza finanziaria, far crescere il patrimonio e preparare ciò che vorrai lasciare.</p></article>
 </div>
 <div class="goals-principle">
-<p>Asset allocation, diversificazione e controllo del rischio restano fondamentali. Ma acquistano senso quando ogni investimento ha una funzione, un orizzonte temporale e un livello di rischio comprensibile.</p>
-<strong>Costruisco un portafoglio intorno a ciò che deve fare per te.</strong>
+<p>Asset allocation, diversificazione e controllo del rischio restano fondamentali. Ma acquistano senso soltanto quando ogni investimento ha una funzione, un orizzonte temporale e un livello di rischio comprensibile.</p>
+<strong>Il portafoglio nasce dai tuoi obiettivi. Non il contrario.</strong>
 </div>
-<div class="risk-block">
-
-
-
 </div>
 </section>
 <section aria-labelledby="questions-title" class="questions-section section-pad">
