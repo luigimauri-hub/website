@@ -46,6 +46,12 @@ ere<!doctype html>
     .path-list time,.path-list .path-label{padding-top:4px;color:var(--cream);font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
     .path-list strong{display:block;color:#fff;font:500 23px/1.25 Georgia,'Times New Roman',serif}
     .path-list p{margin:7px 0 0;color:#bdb8b3;font-size:14px;line-height:1.7}
+    .about-more{background:var(--paper);border-top:1px solid var(--line)}
+    .about-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0;color:var(--dark);font:500 clamp(21px,2vw,26px)/1.3 Georgia,'Times New Roman',serif;border-bottom:1px solid var(--line)}
+    .about-more summary::-webkit-details-marker{display:none}
+    .about-more summary span:last-child{font:400 28px/1 Arial,sans-serif;transition:transform .2s ease}
+    .about-more[open] summary span:last-child{transform:rotate(45deg)}
+    .about-more .experiences{padding-top:clamp(62px,7vw,92px)}
     .human{background:var(--paper)}
     .human-grid{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr);gap:clamp(54px,7vw,92px);align-items:start}
     .human h2{font-size:clamp(39px,4vw,55px)}
@@ -138,6 +144,8 @@ Vissuto un anno a Boston a metà anni 90.
 </figure>
 </div>
 </section>
+<details class="about-more">
+<summary class="shell"><span>Continua a leggere</span><span aria-hidden="true">+</span></summary>
 <section class="about-section experiences">
 <div class="shell">
 <div class="experiences-heading">
@@ -160,13 +168,14 @@ Vissuto un anno a Boston a metà anni 90.
 <article class="experience-card">
 <small>Arte urbana contemporanea · dal 2007 al 2016</small>
 <h3></h3>
-<p>Da curatore e collezionista  ho imparato a osservare, selezionare e distinguere ciò che attira subito l’attenzione da ciò che possiede valore nel tempo. L'ultima mostra che ho organizzato nel  2015 con la preziosa collaborazione di mia moglie e' stata citata  dal <a href="https://www.wsj.com/articles/street-art-is-finding-a-home-with-collectors-1442800929"><strong>The Wall Street Journal</strong></a> e intervistato come uno degli esperti mondiali di street art.</p>
+<p>Da curatore e collezionista  ho imparato a osservare, selezionare e distinguere ciò che attira subito l’attenzione da ciò che possiede valore nel tempo. L'ultima mostra che ho organizzato nel 2015 "Urban Painting - street art exhibition", con la preziosa collaborazione di mia moglie, e' stata citata  nel  <a href="https://www.wsj.com/articles/street-art-is-finding-a-home-with-collectors-1442800929"><strong>The Wall Street Journal</strong></a> .</p>
 <div class="experience-bottom">Per il cliente: guardare oltre le mode e valutare con maggiore profondità.</div>
 </article>
 </div>
 <p class="value-line">Esperienze diverse. <span>Un solo obiettivo: aiutarti a decidere</span></p>
 </div>
 </section>
+</details>
 <section class="about-section human">
 <div class="shell human-grid">
 <div><p class="eyebrow">La persona</p><h2></h2></div>
