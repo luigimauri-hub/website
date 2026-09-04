@@ -1,329 +1,671 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Polizze finanziarie: vantaggi e limiti — Luigi Mauri</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy: #12233D;
-    --navy-deep: #0A1626;
-    --gold: #A9812E;
-    --gold-soft: #C9A857;
-    --ivory: #F7F4EC;
-    --paper: #FCFAF5;
-    --ink: #201D1A;
-    --stone: #7C7466;
-    --line: #E4DDCC;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    margin:0;
-    color:var(--navy-deep);
-  }
-  a{color:inherit;}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 32px;}
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Vantaggi, limiti e costi delle polizze finanziarie di investimento. Una guida chiara di Luigi Mauri per capire quando questo strumento può avere senso." name="description"/>
+  <meta content="#262320" name="theme-color"/>
+  <title>Polizze finanziarie di investimento | Luigi Mauri</title>
+  <link href="https://luigimauri-hub.github.io/website/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="https://luigimauri-hub.github.io/website/styles.css" rel="stylesheet"/>
+  <link href="https://luigimauri-hub.github.io/website/polizze-finanziarie.html" rel="canonical"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Luigi Mauri" property="og:site_name"/>
+  <meta content="Polizze finanziarie di investimento | Luigi Mauri" property="og:title"/>
+  <meta content="Vantaggi, limiti e costi delle polizze finanziarie di investimento. Una guida chiara per capire quando questo strumento può avere senso." property="og:description"/>
+  <meta content="https://luigimauri-hub.github.io/website/polizze-finanziarie.html" property="og:url"/>
+  <meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" property="og:image"/>
+  <meta content="Luigi Mauri" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Polizze finanziarie di investimento | Luigi Mauri" name="twitter:title"/>
+  <meta content="Vantaggi, limiti e costi delle polizze finanziarie di investimento." name="twitter:description"/>
+  <meta content="https://luigimauri-hub.github.io/website/images/luigi-profilo.jpg" name="twitter:image"/>
 
-  header{
-    padding:28px 0;
-    border-bottom:1px solid var(--line);
-  }
-  header .wrap{display:flex;justify-content:space-between;align-items:center;}
-  .brand{font-family:'Fraunces', serif;font-size:19px;color:var(--navy-deep);text-decoration:none;font-weight:500;}
-  nav{display:flex;gap:28px;font-size:14.5px;}
-  nav a{text-decoration:none;color:var(--stone);}
-  nav a:hover{color:var(--navy-deep);}
+  <style>
+    .policy-page{background:#fff;color:var(--ink)}
 
-  .hero{
-    background:var(--navy);
-    color:var(--ivory);
-    padding:96px 0 80px;
-  }
-  .hero .kicker{
-    font-size:15px;
-    color:var(--gold-soft);
-    margin-bottom:18px;
-  }
-  .hero h1{
-    color:#fff;
-    font-size:44px;
-    line-height:1.18;
-    max-width:14ch;
-  }
-  .hero p{
-    max-width:52ch;
-    font-size:17.5px;
-    color:#D9DEE8;
-    margin-top:22px;
-  }
+    .policy-hero{
+      padding:clamp(76px,8vw,116px) 0 clamp(82px,9vw,126px);
+      overflow:hidden;
+      background:var(--dark);
+      color:#fff;
+    }
 
-  section{padding:76px 0;}
-  section.tight{padding-top:0;}
+    .policy-hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.17fr) minmax(290px,.58fr);
+      gap:clamp(58px,8vw,112px);
+      align-items:end;
+    }
 
-  .section-head{max-width:56ch;margin-bottom:44px;}
-  .section-head h2{font-size:29px;line-height:1.3;}
-  .section-head p{color:var(--stone);margin-top:12px;font-size:16px;}
+    .policy-kicker{
+      margin:0 0 22px;
+      color:var(--bronze-light);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
 
-  .grid{
-    display:grid;
-    grid-template-columns: 1.55fr 1fr;
-    gap:56px;
-    align-items:start;
-  }
+    .policy-hero h1{
+      max-width:880px;
+      margin:0;
+      font-size:clamp(51px,6vw,82px);
+      line-height:.98;
+      letter-spacing:-.045em;
+    }
 
-  .pros{display:flex;flex-direction:column;}
-  .pro{
-    display:grid;
-    grid-template-columns: 22px 1fr;
-    gap:16px;
-    padding:20px 0;
-    border-top:1px solid var(--line);
-  }
-  .pro:last-child{border-bottom:1px solid var(--line);}
-  .pro .mark{
-    color:var(--gold);
-    font-size:17px;
-    line-height:1.6;
-  }
-  .pro h3{font-size:16.5px;color:var(--ink);font-weight:600;font-family:'Inter',sans-serif;}
-  .pro p{margin:5px 0 0;color:var(--stone);font-size:15px;}
+    .policy-hero h1 em{
+      display:block;
+      margin-top:8px;
+      color:var(--cream);
+      font-style:italic;
+    }
 
-  .con-panel{
-    background:var(--navy-deep);
-    color:var(--ivory);
-    padding:40px 32px;
-    position:sticky;
-    top:28px;
-  }
-  .con-panel .label{
-    font-size:14px;
-    color:var(--gold-soft);
-    margin-bottom:14px;
-  }
-  .con-panel h3{
-    color:#fff;
-    font-size:23px;
-    font-weight:500;
-  }
-  .con-panel p{
-    color:#C7CCD8;
-    font-size:15.5px;
-    margin-top:16px;
-  }
-  .con-panel .divider{
-    height:1px;
-    background:rgba(255,255,255,0.14);
-    margin:24px 0;
-  }
-  .con-panel .note{
-    font-size:14.5px;
-    color:#AEB6C6;
-  }
+    .policy-lead{
+      max-width:780px;
+      margin:35px 0 0;
+      color:#d1ccc7;
+      font-size:clamp(17px,1.7vw,20px);
+      line-height:1.78;
+    }
 
-  .balance{
-    background:var(--ivory);
-    padding:72px 0;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-  }
-  .balance .wrap{max-width:760px;}
-  .balance h2{font-size:27px;}
-  .balance p{
-    font-size:17px;
-    color:#3A362F;
-    margin-top:20px;
-  }
-  .balance p + p{margin-top:14px;}
+    .policy-hero-aside{
+      border-top:1px solid rgba(255,255,255,.28);
+    }
 
-  .cta{
-    text-align:left;
-    padding:80px 0 96px;
-  }
-  .cta h2{font-size:28px;max-width:20ch;}
-  .cta p{color:var(--stone);margin-top:14px;font-size:16px;max-width:48ch;}
-  .cta .btn{
-    display:inline-block;
-    margin-top:28px;
-    background:var(--navy);
-    color:#fff;
-    text-decoration:none;
-    padding:14px 26px;
-    font-size:15px;
-    font-weight:500;
-  }
-  .cta .btn:hover{background:var(--navy-deep);}
+    .policy-hero-stat{
+      display:grid;
+      grid-template-columns:42px 1fr;
+      gap:12px;
+      align-items:start;
+      padding:20px 0;
+      border-bottom:1px solid rgba(255,255,255,.16);
+    }
 
-  footer{
-    border-top:1px solid var(--line);
-    padding:32px 0;
-    font-size:13.5px;
-    color:var(--stone);
-  }
+    .policy-hero-stat b{
+      color:var(--bronze-light);
+      font:500 25px/1 Georgia,'Times New Roman',serif;
+    }
 
-  @media (max-width: 760px){
-    .hero{padding:64px 0 56px;}
-    .hero h1{font-size:32px;max-width:none;}
-    section{padding:56px 0;}
-    .grid{grid-template-columns:1fr;gap:36px;}
-    .con-panel{position:static;}
-    nav{display:none;}
-  }
-</style>
+    .policy-hero-stat span{
+      color:#c8c3be;
+      font-size:13px;
+      line-height:1.55;
+    }
+
+    .advantages{
+      padding:clamp(78px,8vw,112px) 0;
+      background:var(--paper);
+    }
+
+    .policy-heading{
+      display:grid;
+      grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);
+      gap:clamp(52px,7vw,96px);
+      align-items:end;
+      margin-bottom:clamp(45px,6vw,68px);
+    }
+
+    .policy-heading h2{
+      max-width:620px;
+      font-size:clamp(40px,4.5vw,62px);
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+
+    .policy-heading>p{
+      max-width:690px;
+      margin:0 0 5px;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.8;
+    }
+
+    .advantage-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      border-top:1px solid var(--line);
+    }
+
+    .advantage-list details{
+      position:relative;
+      min-width:0;
+      border-bottom:1px solid var(--line);
+    }
+
+    .advantage-list details:nth-child(odd){
+      padding-right:clamp(25px,4vw,52px);
+      border-right:1px solid var(--line);
+    }
+
+    .advantage-list details:nth-child(even){
+      padding-left:clamp(25px,4vw,52px);
+    }
+
+    .advantage-list summary{
+      min-height:150px;
+      padding:28px 0;
+      display:grid;
+      grid-template-columns:38px minmax(0,1fr) 28px;
+      gap:14px;
+      align-items:start;
+      cursor:pointer;
+      list-style:none;
+    }
+
+    .advantage-list summary::-webkit-details-marker{display:none}
+
+    .advantage-number{
+      padding-top:6px;
+      color:var(--bronze);
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:.08em;
+    }
+
+    .advantage-title{
+      color:var(--dark);
+      font:500 clamp(24px,2.25vw,32px)/1.13 Georgia,'Times New Roman',serif;
+      letter-spacing:-.025em;
+    }
+
+    .advantage-plus{
+      width:28px;
+      height:28px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--line);
+      border-radius:50%;
+      color:var(--bronze);
+      font-size:18px;
+      font-weight:400;
+      transition:transform .2s ease,border-color .2s ease;
+    }
+
+    .advantage-list details[open] .advantage-plus{
+      transform:rotate(45deg);
+      border-color:var(--bronze);
+    }
+
+    .advantage-copy{
+      max-width:590px;
+      margin:-13px 0 0 52px;
+      padding:0 30px 31px 0;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.76;
+    }
+
+    .cost-section{
+      padding:clamp(78px,8vw,108px) 0;
+      background:#312e2a;
+      color:#fff;
+    }
+
+    .cost-grid{
+      display:grid;
+      grid-template-columns:minmax(250px,.7fr) minmax(0,1.3fr);
+      gap:clamp(58px,8vw,105px);
+      align-items:start;
+    }
+
+    .cost-label{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:22px;
+      color:var(--bronze-light);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .cost-label:before{
+      content:"";
+      width:34px;
+      height:1px;
+      background:var(--bronze-light);
+    }
+
+    .cost-section h2{
+      max-width:520px;
+      color:#fff;
+      font-size:clamp(44px,5vw,66px);
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+
+    .cost-copy{
+      padding-top:2px;
+      border-top:1px solid var(--line-dark);
+    }
+
+    .cost-copy p{
+      max-width:760px;
+      margin:0;
+      padding:24px 0;
+      border-bottom:1px solid var(--line-dark);
+      color:#cbc6c1;
+      font-size:16px;
+      line-height:1.8;
+    }
+
+    .cost-copy p strong{color:#fff}
+
+    .balance-section{
+      padding:clamp(80px,9vw,120px) 0;
+      background:#fff;
+    }
+
+    .balance-grid{
+      display:grid;
+      grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);
+      gap:clamp(58px,8vw,104px);
+      align-items:start;
+    }
+
+    .balance-section h2{
+      max-width:570px;
+      color:var(--dark);
+      font-size:clamp(42px,4.8vw,64px);
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+
+    .balance-copy p{
+      max-width:740px;
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.82;
+    }
+
+    .balance-copy p+p{margin-top:24px}
+
+    .balance-copy .balance-question{
+      margin-top:34px;
+      padding-top:28px;
+      border-top:1px solid var(--line);
+      color:var(--dark);
+      font:500 clamp(25px,2.5vw,35px)/1.32 Georgia,'Times New Roman',serif;
+      letter-spacing:-.02em;
+    }
+
+    .risk-note{
+      padding:clamp(58px,6vw,78px) 0;
+      background:var(--paper);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .risk-note-grid{
+      display:grid;
+      grid-template-columns:190px 1fr;
+      gap:clamp(38px,6vw,76px);
+      align-items:start;
+    }
+
+    .risk-note h2{
+      margin:0;
+      color:var(--bronze);
+      font:800 11px/1.4 Arial,Helvetica,sans-serif;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .risk-note p{
+      max-width:900px;
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.75;
+    }
+
+    .risk-note p+p{margin-top:12px}
+    .risk-note strong{color:var(--dark)}
+
+    .policy-cta{
+      padding:clamp(82px,9vw,116px) 0;
+      background:var(--brown);
+      color:#fff;
+    }
+
+    .policy-cta-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(310px,.72fr);
+      gap:clamp(58px,8vw,104px);
+      align-items:end;
+    }
+
+    .policy-cta h2{
+      max-width:720px;
+      color:#fff;
+      font-size:clamp(44px,5vw,68px);
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+
+    .policy-cta-copy p{
+      max-width:520px;
+      margin:0 0 27px;
+      color:#d8d0c9;
+      font-size:16px;
+      line-height:1.78;
+    }
+
+    .policy-cta-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px 25px;
+      align-items:center;
+    }
+
+    @media(max-width:900px){
+      .policy-hero-grid,
+      .policy-heading,
+      .cost-grid,
+      .balance-grid,
+      .policy-cta-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+      }
+
+      .policy-hero-aside{max-width:620px}
+      .policy-heading{align-items:start}
+    }
+
+    @media(max-width:720px){
+      .policy-hero{padding:52px 0 70px}
+      .policy-hero h1{font-size:clamp(44px,12.5vw,59px)}
+      .policy-lead{margin-top:27px;font-size:16px}
+
+      .advantage-list{grid-template-columns:1fr}
+      .advantage-list details:nth-child(odd),
+      .advantage-list details:nth-child(even){
+        padding:0;
+        border-right:0;
+      }
+
+      .advantage-list summary{
+        min-height:0;
+        padding:24px 0;
+        grid-template-columns:30px minmax(0,1fr) 28px;
+        gap:10px;
+      }
+
+      .advantage-title{font-size:24px}
+      .advantage-copy{margin:-5px 0 0 40px;padding:0 18px 25px 0;font-size:14px}
+      .risk-note-grid{grid-template-columns:1fr;gap:18px}
+      .policy-cta-actions .button{width:100%}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .advantage-plus{transition:none}
+    }
+  </style>
 </head>
-<body>
 
-<header>
-  <div class="wrap">
-    <a class="brand" href="index.html">Luigi Mauri</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chi-sono.html">Chi sono</a>
-      <a href="collaborazioni.html">Con chi collaboro</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </div>
-</header>
+<body class="policy-page">
+  <header class="site-header">
+    <a aria-label="Luigi Mauri, torna alla pagina iniziale" class="brand" href="https://luigimauri-hub.github.io/website/index.html">
+      <img alt="" src="https://luigimauri-hub.github.io/website/images/luigi-avatar.jpg"/>
+      <span class="brand-copy">
+        <strong>Luigi Mauri</strong>
+        <small>Consulente Patrimoniale dal 1995</small>
+      </span>
+    </a>
 
-<div class="hero">
-  <div class="wrap">
-    <div class="kicker">Polizze finanziarie di investimento</div>
-    <h1>Uno strumento potente, non per tutti gli obiettivi</h1>
-    <p>Come parte della costruzione di piani di investimento per i miei clienti, utilizzo da sempre le Polizze Finanziarie d'Investimento. Non sono la soluzione universale che a volte vengono presentate, né il prodotto costoso da evitare a prescindere: sono uno strumento con vantaggi strutturali precisi, e un limite altrettanto preciso. Qui trovi entrambi, senza sconti.</p>
-  </div>
-</div>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <h2>I vantaggi strutturali</h2>
-      <p>Alcuni nascono dalla forma del contratto assicurativo, altri dal trattamento fiscale e successorio che la legge riserva a questo strumento.</p>
-    </div>
-
-    <div class="grid">
-      <div class="pros">
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Nessun conto corrente o dossier titoli</h3>
-            <p>La polizza è autoportante: non richiede l'apertura di un rapporto bancario dedicato per operare.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Un contratto che dura quanto serve</h3>
-            <p>Nessuna scadenza imposta: resta in vita fino al riscatto volontario o fino al decesso del contraente, quando passa in successione.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Fiscalità rimandata</h3>
-            <p>Le plusvalenze si tassano solo al momento del riscatto, non anno per anno: il capitale lavora anche sulla parte che altrove finirebbe in imposta.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Compensazione tra fondi interni</h3>
-            <p>Guadagni e perdite dei diversi comparti (gestione separata, fodni interni , fondi esterni ed ETF) si compensano all'interno della stessa polizza, in modo spesso più favorevole del regime amministrato ordinario o gestito.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Impignorabile e insequestrabile</h3>
-            <p>Per l'art. 1923 del Codice Civile, salvo i casi di dolo o revocatoria: una protezione patrimoniale che pochi altri strumenti offrono.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Fuori dall'asse ereditario</h3>
-            <p>La prestazione va ai beneficiari designati, non rientra nella successione né, salvo eccezioni, nel calcolo della legittima.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Beneficiari a scelta libera</h3>
-            <p>Puoi designare chi vuoi, non solo gli eredi legittimi: uno strumento di pianificazione, non solo di investimento.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Liquidazione rapida ai beneficiari</h3>
-            <p>Non serve attendere la dichiarazione di successione: i tempi di erogazione sono generalmente molto più brevi.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Nessuna imposta di successione sulla prestazione</h3>
-            <p>Nella generalità dei casi, il capitale caso morte non è soggetto a imposta di successione.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Switch tra fondi senza tassazione immediata</h3>
-            <p>A seconda del prodotto, spostare capitale tra comparti interni non genera un evento fiscale, a differenza della vendita in un conto amministrato.</p>
-          </div>
-        </div>
-        <div class="pro">
-          <span class="mark">＋</span>
-          <div>
-            <h3>Gestione delegata</h3>
-            <p>Il contratto è pensato per essere seguito, non gestito in autonomia giorno per giorno: la parte operativa resta alla compagnia.</p>
+    <details class="site-menu" id="site-menu">
+      <summary aria-label="Apri il menu">
+        <span class="menu-label">Menu</span>
+        <span aria-hidden="true" class="menu-icon"><i></i><i></i></span>
+      </summary>
+      <div class="menu-panel">
+        <nav aria-label="Navigazione principale">
+          <a href="https://luigimauri-hub.github.io/website/index.html"><i>01</i><span>Home</span><b>↗</b></a>
+          <a href="https://luigimauri-hub.github.io/website/chisono.html"><i>02</i><span>Chi sono</span><b>↗</b></a>
+          <a href="https://luigimauri-hub.github.io/website/conchicollaboro.html"><i>03</i><span>Con chi collaboro</span><b>↗</b></a>
+          <a href="https://luigimauri-hub.github.io/website/contatti.html"><i>04</i><span>Contatti</span><b>↗</b></a>
+        </nav>
+        <div class="menu-contact">
+          <span>Milano · Monza · Da te · Online</span>
+          <div class="menu-contact-links">
+            <a href="tel:+393939789715">393 9789715</a>
+            <a href="https://www.linkedin.com/in/luigimauri/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
           </div>
         </div>
       </div>
+    </details>
+  </header>
 
-      <div class="con-panel">
-        <div class="label">Il limite da conoscere</div>
-        <h3>Sono costose</h3>
-        <p>Caricamenti, costi di gestione e commissioni implicite sono, nella maggior parte dei casi, più alti rispetto a una classica gestione patrimoniale o al  conto titoli amministrato.</p>
-        <div class="divider"></div>
-        <p class="note">Non è un dettaglio da minimizzare: è il prezzo dei vantaggi elencati a fianco, e va misurato rispetto a quanto quei vantaggi contano davvero per te.</p>
+  <main>
+    <section aria-labelledby="policy-title" class="policy-hero">
+      <div class="shell policy-hero-grid">
+        <div>
+          <p class="policy-kicker">Polizze finanziarie di investimento</p>
+          <h1 id="policy-title">Uno strumento potente.<em>Non per tutti gli obiettivi.</em></h1>
+          <p class="policy-lead">Da oltre vent’anni utilizzo le polizze finanziarie come parte della costruzione di piani di investimento. Non sono la soluzione universale che a volte viene presentata, né il prodotto costoso da evitare a prescindere: sono uno strumento con vantaggi strutturali precisi e un limite altrettanto preciso. Qui trovi entrambi, senza sconti.</p>
+        </div>
+
+        <aside aria-label="In sintesi" class="policy-hero-aside">
+          <div class="policy-hero-stat"><b>11</b><span>vantaggi da valutare, non da dare per scontati</span></div>
+          <div class="policy-hero-stat"><b>01</b><span>limite da misurare con attenzione: i costi</span></div>
+          <div class="policy-hero-stat"><b>01</b><span>domanda decisiva: serve davvero ai tuoi obiettivi?</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="advantages-title" class="advantages">
+      <div class="shell">
+        <div class="policy-heading">
+          <div>
+            <p class="eyebrow">I vantaggi strutturali</p>
+            <h2 id="advantages-title">Cosa può offrire una polizza finanziaria.</h2>
+          </div>
+          <p>Alcuni vantaggi nascono dalla forma del contratto assicurativo, altri dal trattamento fiscale e successorio. La loro effettiva applicazione dipende sempre dal prodotto e dalla situazione personale.</p>
+        </div>
+
+        <div class="advantage-list">
+          <details open>
+            <summary>
+              <span class="advantage-number">01</span>
+              <strong class="advantage-title">Nessun dossier titoli dedicato</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">La polizza è un contratto autonomo: per operare non richiede l’apertura di un dossier titoli o di un conto corrente presso la compagnia.</p>
+          </details>
+
+          <details open>
+            <summary>
+              <span class="advantage-number">02</span>
+              <strong class="advantage-title">Un contratto che può durare quanto serve</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">Molte polizze sono a vita intera e non impongono una scadenza prestabilita. Restano in vigore fino al riscatto o al decesso dell’assicurato, secondo quanto previsto dal contratto.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">03</span>
+              <strong class="advantage-title">Fiscalità differita</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">Le plusvalenze maturate non vengono tassate anno per anno, ma quando si verifica un evento fiscalmente rilevante, come il riscatto o la liquidazione della prestazione. Nel frattempo anche la parte non ancora versata al fisco resta investita.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">04</span>
+              <strong class="advantage-title">Risultato unitario tra i comparti</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">All’interno dello stesso contratto, il risultato complessivo riflette l’andamento positivo e negativo dei diversi comparti. Il meccanismo concreto dipende dalla struttura della polizza e va verificato nel Set Informativo.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">05</span>
+              <strong class="advantage-title">Tutela patrimoniale, entro limiti precisi</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">L’art. 1923 del Codice Civile tutela le somme dovute dall’assicuratore al contraente o al beneficiario dalle azioni esecutive o cautelari. Restano salve le azioni previste dalla legge sui premi versati e la tutela presuppone che il contratto conservi una reale natura assicurativa.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">06</span>
+              <strong class="advantage-title">Fuori dall’asse ereditario</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">La prestazione caso morte spetta direttamente ai beneficiari designati e, in linea generale, non entra nell’asse ereditario. Restano però tutelati i diritti che la legge riconosce a creditori ed eredi rispetto ai premi versati.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">07</span>
+              <strong class="advantage-title">Beneficiari scelti dal contraente</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">È possibile indicare una o più persone, anche diverse dagli eredi legittimi, e modificare la designazione nei limiti e con le modalità previste dal contratto e dalla legge.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">08</span>
+              <strong class="advantage-title">Liquidazione più diretta ai beneficiari</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">In linea generale, la richiesta di liquidazione può procedere senza attendere la chiusura della successione. Tempi e documentazione necessaria dipendono dalla compagnia e dalla corretta identificazione dei beneficiari.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">09</span>
+              <strong class="advantage-title">Nessuna imposta di successione sulla prestazione</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">Nella generalità dei casi, la somma liquidata ai beneficiari non è soggetta all’imposta di successione. Va distinta l’eventuale tassazione dei rendimenti finanziari maturati, che segue regole proprie.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">10</span>
+              <strong class="advantage-title">Switch senza tassazione immediata</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">Quando il prodotto lo consente, spostare il capitale tra comparti interni non determina di per sé una tassazione immediata, a differenza della vendita di strumenti in un conto amministrato.</p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="advantage-number">11</span>
+              <strong class="advantage-title">Gestione operativa delegata</strong>
+              <span aria-hidden="true" class="advantage-plus">+</span>
+            </summary>
+            <p class="advantage-copy">La parte amministrativa e l’operatività sui fondi interni restano alla compagnia. Nelle unit linked, però, il rischio dell’investimento è normalmente a carico del contraente e le garanzie esistono solo se espressamente previste.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cost-title" class="cost-section">
+      <div class="shell cost-grid">
+        <div>
+          <span class="cost-label">Il limite da conoscere</span>
+          <h2 id="cost-title">Possono essere costose.</h2>
+        </div>
+        <div class="cost-copy">
+          <p>Caricamenti, costi di gestione, costi dei fondi sottostanti ed eventuali commissioni possono essere <strong>più alti rispetto a un conto titoli amministrato o a un portafoglio in ETF.</strong></p>
+          <p>Non è un dettaglio da minimizzare. È il prezzo dei vantaggi elencati sopra e va misurato rispetto a quanto quei vantaggi contano davvero per te.</p>
+          <p><strong>Il confronto corretto non si ferma al costo:</strong> mette sullo stesso piano costi, rischi, flessibilità, fiscalità e utilità successoria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="balance-title" class="balance-section">
+      <div class="shell balance-grid">
+        <div>
+          <p class="eyebrow">Dove si trova la quadra</p>
+          <h2 id="balance-title">Uno strumento specifico, per bisogni specifici.</h2>
+        </div>
+        <div class="balance-copy">
+          <p>Il costo più alto non rende la polizza uno strumento sbagliato: la rende uno strumento specifico. Ha senso quando la pianificazione successoria, il differimento fiscale o determinate esigenze patrimoniali pesano davvero nei tuoi obiettivi. Ha meno senso quando quei benefici, per la tua situazione, restano teorici.</p>
+          <p>Il punto di partenza, prima di qualsiasi prodotto, è sempre lo stesso: capire con chiarezza cosa vuoi ottenere, in quale orizzonte temporale e con quale rischio. Solo dopo possiamo verificare se una polizza finanziaria è davvero lo strumento giusto per arrivarci.</p>
+          <p class="balance-question">Non si tratta di chiedersi se una polizza sia buona o cattiva. La domanda è: che cosa deve fare per te?</p>
+        </div>
+      </div>
+    </section>
+
+    <aside aria-labelledby="risk-note-title" class="risk-note">
+      <div class="shell risk-note-grid">
+        <h2 id="risk-note-title">Prima di decidere</h2>
+        <div>
+          <p><strong>Le polizze finanziarie non sono prive di rischio.</strong> Il valore dell’investimento può oscillare e il capitale può non essere garantito. Costi, possibilità di riscatto, penali, garanzie, profilo di rischio e trattamento fiscale variano da prodotto a prodotto.</p>
+          <p>Le informazioni presenti in questa pagina hanno carattere generale e non costituiscono una raccomandazione personalizzata. I rendimenti passati non sono indicativi di quelli futuri. Prima della sottoscrizione leggere il Set Informativo e il KID.</p>
+        </div>
+      </div>
+    </aside>
+
+    <section aria-labelledby="cta-title" class="policy-cta">
+      <div class="shell policy-cta-grid">
+        <div>
+          <p class="eyebrow light">Vuoi capire se fa per te?</p>
+          <h2 id="cta-title">Parliamo prima dei tuoi obiettivi.</h2>
+        </div>
+        <div class="policy-cta-copy">
+          <p>Da lì si vede se una polizza finanziaria ha senso, quale funzione può svolgere e in che misura utilizzarla.</p>
+          <div class="policy-cta-actions">
+            <a class="button button-light" href="https://luigimauri-hub.github.io/website/contatti.html">Fissiamo un primo incontro <span>→</span></a>
+            <a class="text-link light-link" href="https://wa.me/393939789715" rel="noopener noreferrer" target="_blank">WhatsApp · 393 9789715 ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main shell">
+      <div class="footer-brand">
+        <strong>Luigi Mauri</strong>
+        <span>Investimenti · Previdenza · Patrimonio</span>
+        <small>Milano · Monza · Da te · Online</small>
+      </div>
+      <nav aria-label="Pagine del sito">
+        <a href="https://luigimauri-hub.github.io/website/index.html">Home</a>
+        <a href="https://luigimauri-hub.github.io/website/chisono.html">Chi sono</a>
+        <a href="https://luigimauri-hub.github.io/website/conchicollaboro.html">Con chi collaboro</a>
+        <a href="https://luigimauri-hub.github.io/website/contatti.html">Contatti</a>
+      </nav>
+      <div class="footer-contact">
+        <span>Un primo confronto, senza impegno</span>
+        <a href="tel:+393939789715">393 9789715</a>
+        <a href="https://wa.me/393939789715" rel="noopener noreferrer" target="_blank">WhatsApp ↗</a>
+        <a href="https://www.linkedin.com/in/luigimauri/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+        <a href="mailto:luigi@luigimauri.com">luigi@luigimauri.com ↗</a>
       </div>
     </div>
-  </div>
-</section>
+    <div class="footer-legal shell">
+      <p>Luigi Mauri è collaboratore di Portfolio Srl, iscritto al Registro Unico degli Intermediari assicurativi, sezione E, n. E000768721 · P. IVA 02481370969. Portfolio Srl è iscritta al RUI, sezione A, n. A000166714 ed è soggetta alla vigilanza IVASS.</p>
+      <p>I contenuti hanno finalità esclusivamente informative e non costituiscono una raccomandazione personalizzata, un’offerta o una sollecitazione all’investimento.</p>
+    </div>
+  </footer>
 
-<div class="balance">
-  <div class="wrap">
-    <h2>Dove si trova la quadra</h2>
-    <p>Il costo più alto non rende la polizza uno strumento sbagliato: la rende uno strumento specifico. Ha senso quando la protezione patrimoniale, la pianificazione successoria o il differimento fiscale pesano davvero nei tuoi obiettivi. Ha meno senso quando quei benefici, per la tua situazione, restano teorici.</p>
-    <p>Il punto di partenza, prima di qualsiasi prodotto, è sempre lo stesso: capire con chiarezza cosa vuoi ottenere e in che orizzonte temporale, e verificare insieme se questo è davvero lo strumento giusto per arrivarci.</p>
-  </div>
-</div>
+  <a class="mobile-cta" href="https://wa.me/393939789715" rel="noopener noreferrer" target="_blank">WhatsApp · 393 9789715 <span>→</span></a>
 
-<section class="cta">
-  <div class="wrap">
-    <h2>Vuoi capire se fa per te?</h2>
-    <p>Parliamo dei tuoi obiettivi prima ancora che di prodotti. Da lì si vede se una polizza finanziaria ha senso, e in che misura.</p>
-    <a class="btn" href="contatti.html">Scrivimi</a>
-  </div>
-</section>
+  <script>
+    (() => {
+      const menu = document.querySelector('#site-menu');
 
-<footer>
-  <div class="wrap">Luigi Mauri — Consulenza assicurativa e finanziaria</div>
-</footer>
+      document.addEventListener('click', (event) => {
+        if (menu?.open && !menu.contains(event.target)) menu.open = false;
+      });
 
+      menu?.querySelectorAll('a').forEach((anchor) => {
+        anchor.addEventListener('click', () => { menu.open = false; });
+      });
+    })();
+  </script>
 </body>
 </html>
