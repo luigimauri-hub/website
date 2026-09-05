@@ -1,25 +1,23 @@
-PACCHETTO SITO LUIGI MAURI
+REVISIONE COORDINATA — VERSIONE AGGIORNATA
 
-1. Carica nella cartella principale del dominio tutto il contenuto di questa cartella.
-2. Carica tutti i file insieme: questa versione non contiene cartelle.
-3. Il file iniziale è index.html.
-4. Se sul server esiste già un index.html, scaricane una copia di sicurezza prima di sostituirlo.
-5. Dopo l'upload apri https://www.luigimauri.com e aggiorna la pagina svuotando la cache.
+Questa versione sostituisce il pacchetto precedente.
 
-Il sito è statico: non richiede WordPress, database, Node.js o configurazioni particolari.
+Carica nella cartella principale del sito soltanto:
+index.html
+chisono.html
+soluzioni.html
 
-AGGIORNAMENTO MENU MOBILE
-Per aggiungere il menu hamburger a un sito già caricato, sostituisci index.html e script.js
-e carica anche il nuovo file menu.css.
+Mantieni i nomi esatti e sostituisci i tre file omonimi. Non caricare una nuova sottocartella.
+Non modificare styles.css, carousel.js, images, favicon.svg o contatti.html.
+Il pacchetto aggiorna il sito esistente: non è una copia autonoma completa.
 
-VERSIONE CON MENU DESKTOP E PAGINE INTERNE
-Carica tutti i file. Le nuove pagine sono calcolatori.html ed esempi.html.
-Sono necessari anche pagine.css e calcolatori.js.
+Home: ripristinata la frase «Se bastasse scegliere il prodotto migliore, basterebbe un algoritmo».
+Chi sono: apertura con Cattolica e SDA Bocconi, eliminati i quattro aggettivi e mantenuto il percorso personale e professionale.
+Soluzioni: eliminato il blocco autonomo sui fondi nelle polizze. La precisazione compare nel paragrafo Investire un capitale.
+Conservate le FAQ sintetiche e le informazioni sul primo incontro gratuito e senza impegno.
 
-PAGINE PORTFOLIO INTERNE
-I contenuti Portfolio e partner sono riuniti nella sola pagina portfolio.html.
-Carica anche portfolio.css.
+Immagini, riferimenti ai file grafici e dimensioni delle immagini non sono stati cambiati.
+Controllati struttura HTML, titoli, ancore e collegamenti tra le tre pagine. Non è stato eseguito un test visivo nel browser.
 
-PAGINA CHI SONO
-La homepage contiene una sintesi e rimanda a chi-sono.html.
-Carica anche chi-sono.css.
+Il sito pubblico non è stato modificato. Dopo il caricamento controlla le pagine su computer e telefono, inclusi menu, FAQ, carosello e pulsanti di contatto.
+I pulsanti WhatsApp preparano un messaggio: l'invio resta una scelta del visitatore.
